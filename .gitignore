@@ -33,3 +33,6 @@ yarn-error.log*
 # Claude Code (local machine config)
 .claude/settings.local.json
 .claude/launch.json
+
+# Local GitHub auth helper (machine-specific)
+Connect GitHub.command
