@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#0E1526"/>
+      <stop offset="1" stop-color="#0B0B0B"/>
+    </linearGradient>
+    <radialGradient id="pglow" cx="0.5" cy="0.32" r="0.55">
+      <stop offset="0" stop-color="#3B82F6" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pfig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2F6FF"/>
+      <stop offset="1" stop-color="#A9C5FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#pbg)"/>
+  <rect width="800" height="1000" fill="url(#pglow)"/>
+  <g opacity="0.6"><line x1="100" y1="0" x2="100" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="200" y1="0" x2="200" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="300" y1="0" x2="300" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="400" y1="0" x2="400" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="500" y1="0" x2="500" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="600" y1="0" x2="600" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="700" y1="0" x2="700" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="100" x2="800" y2="100" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="200" x2="800" y2="200" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="300" x2="800" y2="300" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="400" x2="800" y2="400" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="500" x2="800" y2="500" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="600" x2="800" y2="600" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="700" x2="800" y2="700" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="800" x2="800" y2="800" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="900" x2="800" y2="900" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></g>
+  <path d="M180 1000 C 180 760 300 690 400 690 C 500 690 620 760 620 1000 Z" fill="url(#pfig)"/>
+  <circle cx="400" cy="470" r="150" fill="url(#pfig)"/>
+  <g fill="rgba(255,255,255,0.16)" font-family="sans-serif" font-size="120" font-weight="700" text-anchor="middle">
+    <text x="400" y="190">CF</text>
+  </g>
+</svg>

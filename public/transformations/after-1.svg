@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img">
+  <defs>
+    <linearGradient id="abg1" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#15294e"/>
+    </linearGradient>
+    <linearGradient id="fig1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.42" r="0.5">
+      <stop offset="0" stop-color="#3B82F6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#abg1)"/>
+  <rect width="800" height="1000" fill="url(#glow1)"/>
+  <g opacity="0.7"><line x1="100" y1="0" x2="100" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="200" y1="0" x2="200" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="300" y1="0" x2="300" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="400" y1="0" x2="400" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="500" y1="0" x2="500" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="600" y1="0" x2="600" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="700" y1="0" x2="700" y2="1000" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="100" x2="800" y2="100" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="200" x2="800" y2="200" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="300" x2="800" y2="300" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="400" x2="800" y2="400" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="500" x2="800" y2="500" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="600" x2="800" y2="600" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="700" x2="800" y2="700" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="800" x2="800" y2="800" stroke="rgba(255,255,255,0.05)" stroke-width="1"/><line x1="0" y1="900" x2="800" y2="900" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></g>
+  
+    <g>
+      <rect x="186" y="278" width="56" height="300" rx="28" fill="url(#fig1)" transform="rotate(7 234 290)"/>
+      <rect x="558" y="278" width="56" height="300" rx="28" fill="url(#fig1)" transform="rotate(-7 566 290)"/>
+      <rect x="296" y="610" width="80" height="338" rx="40" fill="url(#fig1)"/>
+      <rect x="424" y="610" width="80" height="338" rx="40" fill="url(#fig1)"/>
+      <path d="M 234,272
+    C 234,342 294,432 304,506
+    L 288,618
+    L 512,618
+    L 496,506
+    C 506,432 566,342 566,272 Z" fill="url(#fig1)"/>
+      <rect x="378" y="228" width="44" height="46" rx="16" fill="#EAF1FF"/>
+      <circle cx="400" cy="170" r="66" fill="#EAF1FF"/>
+      <rect x="376" y="612" width="14" height="120" fill="none"/>
+    </g>
+  <g fill="rgba(255,255,255,0.8)" font-family="sans-serif" font-size="22" font-weight="600">
+    <text x="48" y="940">RESULT</text>
+  </g>
+</svg>
