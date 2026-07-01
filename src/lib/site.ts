@@ -35,7 +35,7 @@ export const siteConfig = {
   calendlyEmbedUrl:
     "https://calendly.com/chaneyfitnessfla/15min?hide_gdpr_banner=1&background_color=0b0b0b&text_color=ffffff&primary_color=3b82f6",
   // Google Business Profile reviews (share link).
-  reviewsUrl: "https://share.google/gWJ2T9rE9ZSIrcO3G",
+  reviewsUrl: "https://share.google/60izWuCx8WjJfpBlm",
   social: {
     instagram: "https://instagram.com/weneedchan3y",
     linkedin: "https://linkedin.com/company/chaneyfitness",
@@ -81,9 +81,9 @@ export const pillars: { title: string; body: string; icon: LucideIcon }[] = [
     icon: Brain,
   },
   {
-    title: "Lifestyle integration",
-    body: "Coaching designed around your calendar, so fitness supports your career instead of competing with it.",
-    icon: Activity,
+    title: "Nutrition & meal planning",
+    body: "Custom meal plans and flexible nutrition coaching built around your tastes, schedule, and goals — sustainable eating, not another crash diet.",
+    icon: Apple,
   },
   {
     title: "Long-term health",
@@ -169,9 +169,9 @@ export const stats: {
   label: string;
 }[] = [
   { value: 94, suffix: "%", label: "Client success rate" },
-  { value: 12, suffix: "k+", label: "Pounds of fat lost" },
-  { value: 91, suffix: "%", label: "12-month retention" },
-  { value: 12, suffix: " yrs", label: "Coaching experience" },
+  { value: 500, suffix: "+", label: "Pounds of fat lost" },
+  { value: 100, suffix: "%", label: "Clients with better habits" },
+  { value: 7, suffix: " yrs", label: "Coaching experience" },
 ];
 
 export interface Testimonial {

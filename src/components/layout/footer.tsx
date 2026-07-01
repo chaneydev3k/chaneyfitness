@@ -15,7 +15,7 @@ export function Footer() {
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               {siteConfig.tagline} Evidence-based coaching for busy
-              professionals in {siteConfig.locality} and online, worldwide.
+              professionals in {siteConfig.locality} and remote.
             </p>
             <div className="mt-5 flex items-center gap-2">
               <a
@@ -103,7 +103,7 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="text-ink/60">
-                  {siteConfig.locality}, {siteConfig.region} · Online worldwide
+                  {siteConfig.locality}, {siteConfig.region} · Remote
                 </li>
               </ul>
             </div>

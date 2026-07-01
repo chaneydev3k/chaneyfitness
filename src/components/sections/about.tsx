@@ -7,7 +7,7 @@ import { Reveal } from "@/components/shared/reveal";
 
 const credentials = [
   { icon: Award, label: "Certified Personal Trainer" },
-  { icon: Dumbbell, label: "12 years coaching" },
+  { icon: Dumbbell, label: "7 years coaching" },
 ];
 
 export function About() {

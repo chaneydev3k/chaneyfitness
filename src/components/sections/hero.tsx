@@ -143,12 +143,12 @@ export function Hero() {
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
-                    className="size-4 fill-accent text-accent"
+                    className="size-4 fill-[#FBBC04] text-[#FBBC04]"
                     aria-hidden="true"
                   />
                 ))}
               </span>
-              <span className="font-semibold text-white">4.9</span>
+              <span className="font-semibold text-white">5.0</span>
               <span className="inline-flex items-center gap-1">
                 on <GoogleG className="size-3.5" /> Google
               </span>

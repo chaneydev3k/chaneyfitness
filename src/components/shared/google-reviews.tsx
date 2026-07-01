@@ -43,10 +43,10 @@ export function GoogleReviewsBadge({ className }: { className?: string }) {
       )}
     >
       <GoogleG className="size-4" />
-      <span className="font-semibold text-white">4.9</span>
+      <span className="font-semibold text-white">5.0</span>
       <span className="flex" aria-hidden="true">
         {Array.from({ length: 5 }).map((_, i) => (
-          <Star key={i} className="size-3.5 fill-accent text-accent" />
+          <Star key={i} className="size-3.5 fill-[#FBBC04] text-[#FBBC04]" />
         ))}
       </span>
       <span className="hidden text-white/55 sm:inline">Google reviews</span>
