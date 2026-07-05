@@ -10,7 +10,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
-import { ArrowRight, ShieldCheck, Star } from "lucide-react";
+import { ArrowRight, MapPin, ShieldCheck, Star } from "lucide-react";
 
 import { siteConfig } from "@/lib/site";
 import { Button } from "@/components/ui/button";
@@ -156,6 +156,10 @@ export function Hero() {
             <span className="inline-flex items-center gap-2">
               <ShieldCheck className="size-4 text-success" />
               Evidence-based · No contracts
+            </span>
+            <span className="inline-flex items-center gap-2">
+              <MapPin className="size-4 text-accent" />
+              St. Petersburg · Manatee County · Online
             </span>
           </motion.div>
         </div>

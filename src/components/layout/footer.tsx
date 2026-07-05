@@ -14,8 +14,9 @@ export function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              {siteConfig.tagline} Evidence-based coaching for busy
-              professionals in {siteConfig.locality} and remote.
+              {siteConfig.tagline} Evidence-based personal training in{" "}
+              {siteConfig.locality} and across Manatee County — plus online
+              coaching, anywhere.
             </p>
             <div className="mt-5 flex items-center gap-2">
               <a
@@ -103,7 +104,7 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="text-ink/60">
-                  {siteConfig.locality}, {siteConfig.region} · Remote
+                  {siteConfig.locality}, {siteConfig.region} · Manatee County · Online
                 </li>
               </ul>
             </div>

@@ -52,9 +52,10 @@ export function LocalBusinessSchema() {
       addressCountry: "US",
     },
     geo: {
+      // Approximate St. Petersburg, FL centroid (service-area business).
       "@type": "GeoCoordinates",
-      latitude: 27.9506,
-      longitude: -82.4572,
+      latitude: 27.7676,
+      longitude: -82.6403,
     },
     areaServed: siteConfig.areaServed.map((name) => ({
       "@type": "City",

@@ -1,6 +1,6 @@
 "use client";
 
-import { CalendarCheck, Mail, Phone } from "lucide-react";
+import { CalendarCheck, MapPin, Mail, Phone } from "lucide-react";
 
 import { siteConfig } from "@/lib/site";
 import { Reveal } from "@/components/shared/reveal";
@@ -36,6 +36,13 @@ export function FinalCta() {
 
           <Reveal delay={0.1} className="mt-8 space-y-4">
             <div className="space-y-4">
+              <div className="flex items-center gap-3 text-white/80">
+                <MapPin className="size-5 text-accent" />
+                <span>
+                  In-person in St. Petersburg &amp; across Manatee County —
+                  plus online coaching, anywhere.
+                </span>
+              </div>
               <div className="flex items-center gap-3 text-white/80">
                 <CalendarCheck className="size-5 text-success" />
                 <span>Flexible scheduling that works around your calendar.</span>

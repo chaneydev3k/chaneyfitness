@@ -19,14 +19,24 @@ export const siteConfig = {
   name: "Chaney Fitness",
   tagline: "Strength. Performance. Longevity.",
   description:
-    "Evidence-based coaching that helps busy professionals get stronger, leaner, and healthier — built around you, not the other way around.",
+    "Personal training in St. Petersburg, FL and across Manatee County, plus online coaching — helping busy professionals get stronger, leaner, and healthier, built around a real schedule.",
   // Canonical host is the non-www apex (the site serves from non-www).
   // The www -> apex 301 must be configured in Cloudflare (see Needs list).
   url: "https://chaneyfitness.com",
-  locality: "Tampa Bay",
+  // Anchor city (GBP home base / Pinellas). Manatee County is served via
+  // organic city pages (Palmetto, Bradenton) — see SEO brief.
+  locality: "St. Petersburg",
   region: "FL",
   regionName: "Florida",
-  areaServed: ["Tampa", "St. Petersburg", "Tampa Bay", "Online"],
+  areaServed: [
+    "St. Petersburg",
+    "Palmetto",
+    "Bradenton",
+    "Parrish",
+    "Ellenton",
+    "Lakewood Ranch",
+    "Online",
+  ],
   email: "chaneyfitnessfla@gmail.com",
   phone: "(727) 498-1679",
   phoneHref: "tel:+17274981679",
@@ -146,7 +156,7 @@ export const programs: Program[] = [
     name: "Personal Training",
     tagline: "Private, in-person, one-on-one.",
     description:
-      "Hands-on coaching in the Tampa Bay area, focused on quality movement and measurable strength gains.",
+      "Hands-on coaching across St. Petersburg and Manatee County, focused on quality movement and measurable strength gains.",
     features: [
       "Private 1:1 sessions",
       "Small group sessions",
