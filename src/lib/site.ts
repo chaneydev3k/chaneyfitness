@@ -20,8 +20,9 @@ export const siteConfig = {
   tagline: "Strength. Performance. Longevity.",
   description:
     "Evidence-based coaching that helps busy professionals get stronger, leaner, and healthier — built around you, not the other way around.",
-  // Update to the real production domain before launch.
-  url: "https://www.chaneyfitness.com",
+  // Canonical host is the non-www apex (the site serves from non-www).
+  // The www -> apex 301 must be configured in Cloudflare (see Needs list).
+  url: "https://chaneyfitness.com",
   locality: "Tampa Bay",
   region: "FL",
   regionName: "Florida",
