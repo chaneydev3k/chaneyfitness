@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
 
 import { navLinks, siteConfig } from "@/lib/site";
@@ -32,7 +33,7 @@ export function Footer() {
             </div>
           </div>
 
-          <nav className="grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3" aria-label="Footer">
+          <nav className="grid grid-cols-2 gap-x-12 gap-y-8 lg:grid-cols-4" aria-label="Footer">
             <div>
               <h2 className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
                 Explore
@@ -40,12 +41,12 @@ export function Footer() {
               <ul className="mt-4 space-y-3 text-sm">
                 {navLinks.map((link) => (
                   <li key={link.href}>
-                    <a
-                      href={link.href}
+                    <Link
+                      href={`/${link.href}`}
                       className="text-ink/80 transition-colors hover:text-accent"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -57,20 +58,38 @@ export function Footer() {
               </h2>
               <ul className="mt-4 space-y-3 text-sm">
                 <li>
-                  <a href="#programs" className="text-ink/80 transition-colors hover:text-accent">
+                  <Link href="/#programs" className="text-ink/80 transition-colors hover:text-accent">
                     Online Coaching
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#programs" className="text-ink/80 transition-colors hover:text-accent">
+                  <Link href="/#programs" className="text-ink/80 transition-colors hover:text-accent">
                     Executive Coaching
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#programs" className="text-ink/80 transition-colors hover:text-accent">
+                  <Link href="/#programs" className="text-ink/80 transition-colors hover:text-accent">
                     Personal Training
-                  </a>
+                  </Link>
                 </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                Service areas
+              </h2>
+              <ul className="mt-4 space-y-3 text-sm">
+                <li>
+                  <Link
+                    href="/personal-trainer-palmetto-fl"
+                    className="text-ink/80 transition-colors hover:text-accent"
+                  >
+                    Personal Trainer in Palmetto
+                  </Link>
+                </li>
+                <li className="text-ink/50">St. Petersburg (soon)</li>
+                <li className="text-ink/50">Bradenton (soon)</li>
               </ul>
             </div>
 

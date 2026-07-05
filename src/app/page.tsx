@@ -9,10 +9,12 @@ import { Features } from "@/components/sections/features";
 import { About } from "@/components/sections/about";
 import { Faq } from "@/components/sections/faq";
 import { FinalCta } from "@/components/sections/final-cta";
+import { FaqSchema } from "@/components/seo/json-ld";
 
 export default function HomePage() {
   return (
     <>
+      <FaqSchema />
       <Hero />
       <Marquee />
       <Why />

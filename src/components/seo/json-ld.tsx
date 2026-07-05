@@ -121,6 +121,7 @@ export function FaqSchema() {
   return <JsonLd data={data} />;
 }
 
+/** Entity schema that belongs on every route (rendered in the root layout). */
 export function SiteJsonLd() {
   return (
     <>
@@ -128,7 +129,6 @@ export function SiteJsonLd() {
       <PersonSchema />
       <LocalBusinessSchema />
       <WebsiteSchema />
-      <FaqSchema />
     </>
   );
 }
