@@ -175,8 +175,8 @@ export function Hero() {
           <BeforeAfter
             beforeSrc="/transformations/before-1.svg"
             afterSrc="/transformations/after-1.svg"
-            beforeAlt="Client before coaching — starting point"
-            afterAlt="Same client after 16 weeks of Chaney Fitness coaching"
+            beforeAlt="Illustrative before-and-after silhouette — starting point"
+            afterAlt="Illustrative before-and-after silhouette — after coaching"
             initial={52}
             className="border-2 border-white/10"
           />
@@ -185,7 +185,7 @@ export function Hero() {
               <span className="font-bold uppercase tracking-wide text-white">
                 Drag to compare
               </span>
-              <span className="text-white/55">16 wks · −31 lbs</span>
+              <span className="text-white/55">Illustrative</span>
             </div>
           </div>
         </motion.div>

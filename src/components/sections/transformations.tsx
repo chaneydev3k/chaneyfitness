@@ -17,9 +17,9 @@ export function Transformations() {
     <section id="transformations" className="bg-white py-24 sm:py-32">
       <div className="container-tight">
         <SectionHeading
-          eyebrow="Transformations"
-          title="Same person. A stronger life."
-          description="Drag the slider to see the change. Behind every result is a sustainable system — not a crash diet or a six-week sprint."
+          eyebrow="How it works"
+          title="What coaching looks like for real goals."
+          description="Illustrative examples of how training and nutrition get built around different lives and goals — not specific client results. Drag the slider to compare."
         />
 
         <div className="mt-16 grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
@@ -36,8 +36,8 @@ export function Transformations() {
                 <BeforeAfter
                   beforeSrc={current.beforeSrc}
                   afterSrc={current.afterSrc}
-                  beforeAlt={`${current.name} before coaching`}
-                  afterAlt={`${current.name} after coaching with Chaney Fitness`}
+                  beforeAlt={`Illustrative before silhouette — ${current.name}`}
+                  afterAlt={`Illustrative after silhouette — ${current.name}`}
                 />
               </motion.div>
             </AnimatePresence>
@@ -78,13 +78,14 @@ export function Transformations() {
                       : "border-border bg-white text-muted-foreground hover:border-ink/30 hover:text-ink"
                   )}
                 >
-                  {t.name.split("—")[0].trim()}
+                  {t.label}
                 </button>
               ))}
             </div>
 
             <p className="mt-6 text-xs text-muted-foreground/80">
-              Individual results vary. Stories shared with client permission.
+              Illustrative examples of coaching approaches — not specific
+              clients or guaranteed results.
             </p>
           </div>
         </div>

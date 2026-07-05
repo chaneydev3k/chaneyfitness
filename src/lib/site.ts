@@ -231,6 +231,7 @@ export const testimonials: Testimonial[] = [
 
 export interface Transformation {
   id: string;
+  label: string;
   name: string;
   meta: string;
   story: string;
@@ -238,31 +239,36 @@ export interface Transformation {
   afterSrc: string;
 }
 
+// Illustrative coaching scenarios by goal type — NOT specific clients or
+// results. Real before/after photos go here once available (with permission).
 export const transformations: Transformation[] = [
   {
-    id: "exec-1",
-    name: "James — 42, Finance Executive",
-    meta: "16 weeks · −31 lbs fat · +9 lbs muscle",
+    id: "fat-loss",
+    label: "Fat loss",
+    name: "Fat loss on a packed schedule",
+    meta: "Strength + travel-proof nutrition",
     story:
-      "Down 31 pounds without missing a single board meeting. We built training around 5:45am sessions and a travel-proof nutrition plan.",
+      "An example of how fat-loss coaching gets structured for a busy professional: efficient strength sessions timed around meetings, plus a nutrition approach built to survive travel — so progress keeps compounding even on a 60-hour week.",
     beforeSrc: "/transformations/before-1.svg",
     afterSrc: "/transformations/after-1.svg",
   },
   {
-    id: "parent-1",
-    name: "Elena — 38, Founder & Parent",
-    meta: "24 weeks · −22 lbs · regained energy",
+    id: "energy-parent",
+    label: "Parents",
+    name: "Strength & energy for parents",
+    meta: "A few focused sessions a week",
     story:
-      "Two kids, one company. Three short strength sessions a week and a few keystone habits brought her energy and confidence back.",
+      "How a plan adapts for a founder with kids: a handful of short, focused strength sessions and a few keystone habits designed to rebuild energy and strength — without adding hours to an already-full week.",
     beforeSrc: "/transformations/before-2.svg",
     afterSrc: "/transformations/after-2.svg",
   },
   {
-    id: "athlete-1",
-    name: "Marcus — 47, Former Athlete",
-    meta: "20 weeks · +18% strength · pain-free",
+    id: "former-athlete",
+    label: "Former athletes",
+    name: "Rebuilding a former athlete",
+    meta: "Strength + mobility, joint-friendly",
     story:
-      "Rebuilt the strength and mobility he had in college — this time with knees and shoulders that feel better, not worse.",
+      "What a return-to-strength plan looks like for a former athlete: rebuilding capacity with mobility and injury-prevention work, so the body ends up feeling better — not beaten up.",
     beforeSrc: "/transformations/before-3.svg",
     afterSrc: "/transformations/after-3.svg",
   },
