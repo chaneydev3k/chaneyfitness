@@ -20,9 +20,8 @@ export const siteConfig = {
   tagline: "Strength. Performance. Longevity.",
   description:
     "Personal training in St. Petersburg, FL and across Manatee County, plus online coaching — helping busy professionals get stronger, leaner, and healthier, built around a real schedule.",
-  // Canonical host is the non-www apex (the site serves from non-www).
-  // The www -> apex 301 must be configured in Cloudflare (see Needs list).
-  url: "https://chaneyfitness.com",
+  // Canonical host is www (Jamaal set the apex -> www 301 in Cloudflare).
+  url: "https://www.chaneyfitness.com",
   // Anchor city (GBP home base / Pinellas). Manatee County is served via
   // organic city pages (Palmetto, Bradenton) — see SEO brief.
   locality: "St. Petersburg",
@@ -190,7 +189,6 @@ export const stats: {
 export interface Testimonial {
   quote: string;
   name: string;
-  role: string;
   initials: string;
 }
 
@@ -200,28 +198,24 @@ export const testimonials: Testimonial[] = [
     quote:
       "What sets Chaney Fitness apart is how hands-on Jamaal is. He's right there coaching you through every rep and knows exactly when to push and when to pull back. I've made real progress, and my confidence is through the roof.",
     name: "Andrew D.",
-    role: "Google review",
     initials: "AD",
   },
   {
     quote:
       "I lost 8 pounds during my first month while building healthier habits and becoming more confident in the gym. His guidance has made fitness feel sustainable rather than overwhelming.",
     name: "Josef M.",
-    role: "Google review",
     initials: "JM",
   },
   {
     quote:
       "My wife and I just had a baby and our schedules were tight. Jamaal went above and beyond — I highly recommend this to hardworking professionals who are crunched for time and want the best possible results.",
     name: "Noah K.",
-    role: "Google review",
     initials: "NK",
   },
   {
     quote:
       "It's been the best decision of my life. The programs are very efficient and I've progressed tremendously. I highly recommend Chaney Fitness whether you're just getting into working out or an advanced lifter.",
     name: "Bryan T.",
-    role: "Google review",
     initials: "BT",
   },
 ];

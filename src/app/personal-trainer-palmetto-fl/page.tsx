@@ -35,15 +35,14 @@ const services = [
 
 const neighborhoods = [
   "Palmetto Historic District",
-  "Northwood",
-  "Trevesta",
+  "Artisan Lakes",
   "Esplanade at Artisan Lakes",
+  "Eaves Bend at Artisan Lakes",
+  "Trevesta",
   "Sanctuary Cove",
   "Willow Walk",
+  "Northwood",
   "Terra Ceia",
-  "North Bradenton",
-  "Parrish",
-  "Ellenton",
 ];
 
 const faqs = [
@@ -230,8 +229,10 @@ export default function PalmettoPage() {
                 ))}
               </div>
               <p className="mt-4 text-sm text-muted-foreground">
-                Plus quick reach across the Green Bridge into North Bradenton and
-                up US-41 / US-301 toward Parrish and Ellenton.
+                Plus the newer communities going up along Moccasin Wallow Road
+                and the Artisan Lakes corridor — and quick reach across the
+                Green Bridge into North Bradenton and up US-41 / US-301 toward
+                Parrish and Ellenton.
               </p>
             </div>
           </Reveal>

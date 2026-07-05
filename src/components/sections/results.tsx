@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
+import { ArrowLeft, ArrowRight, Quote, Star } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { stats, testimonials } from "@/lib/site";
@@ -107,8 +107,16 @@ export function Results() {
                     <span className="block font-medium text-white">
                       {active.name}
                     </span>
-                    <span className="block text-sm text-white/60">
-                      {active.role}
+                    <span
+                      className="mt-1 flex"
+                      aria-label="Rated 5 out of 5 stars"
+                    >
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <Star
+                          key={i}
+                          className="size-3.5 fill-[#FBBC04] text-[#FBBC04]"
+                        />
+                      ))}
                     </span>
                   </span>
                 </figcaption>
