@@ -16,9 +16,9 @@ export function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              {siteConfig.tagline} Evidence-based personal training in{" "}
-              {siteConfig.locality} and across Manatee County — plus online
-              coaching, anywhere.
+              {siteConfig.tagline} Private in-home &amp; mobile personal
+              training in Downtown St. Pete and Palmetto — plus online coaching,
+              anywhere.
             </p>
             <div className="mt-5">
               <a

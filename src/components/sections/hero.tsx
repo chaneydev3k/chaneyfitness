@@ -105,9 +105,9 @@ export function Hero() {
             transition={{ duration: 0.7, ease, delay: 0.14 }}
             className="mt-7 max-w-prose text-pretty text-lg leading-relaxed text-white/70"
           >
-            Personalized coaching that helps busy professionals become
-            stronger, leaner, and healthier — without sacrificing work or
-            family.
+            Private in-home and mobile coaching that helps busy professionals
+            in St. Petersburg get stronger, leaner, and healthier — training
+            that comes to you, on your schedule.
           </motion.p>
 
           <motion.div
@@ -159,7 +159,7 @@ export function Hero() {
             </span>
             <span className="inline-flex items-center gap-2">
               <MapPin className="size-4 text-accent" />
-              St. Petersburg · Manatee County · Online
+              Downtown St. Pete · In-Home &amp; Mobile · Online
             </span>
           </motion.div>
         </div>

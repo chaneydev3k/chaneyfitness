@@ -39,8 +39,8 @@ export function FinalCta() {
               <div className="flex items-center gap-3 text-white/80">
                 <MapPin className="size-5 text-accent" />
                 <span>
-                  In-person in St. Petersburg &amp; across Manatee County —
-                  plus online coaching, anywhere.
+                  In-home &amp; mobile training across Downtown St. Pete and
+                  Palmetto — plus online coaching, anywhere.
                 </span>
               </div>
               <div className="flex items-center gap-3 text-white/80">

@@ -19,7 +19,7 @@ export const siteConfig = {
   name: "Chaney Fitness",
   tagline: "Strength. Performance. Longevity.",
   description:
-    "Personal training in St. Petersburg, FL and across Manatee County, plus online coaching — helping busy professionals get stronger, leaner, and healthier, built around a real schedule.",
+    "In-home & mobile personal training in Downtown St. Petersburg, FL — private strength and fat-loss coaching that comes to you. Also serving Palmetto & the Manatee County area, plus online.",
   // Canonical host is www (Jamaal set the apex -> www 301 in Cloudflare).
   url: "https://www.chaneyfitness.com",
   // Anchor city (GBP home base / Pinellas). Manatee County is served via
@@ -155,9 +155,9 @@ export const programs: Program[] = [
   {
     id: "personal-training",
     name: "Personal Training",
-    tagline: "Private, in-person, one-on-one.",
+    tagline: "Private in-home & mobile, one-on-one.",
     description:
-      "Hands-on coaching across St. Petersburg and Manatee County, focused on quality movement and measurable strength gains.",
+      "In-home and mobile 1:1 coaching across Downtown St. Pete and Palmetto — I bring the session to your home, condo, or building gym, focused on quality movement and real strength gains.",
     features: [
       "Private 1:1 sessions",
       "Small group sessions",

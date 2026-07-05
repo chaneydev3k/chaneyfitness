@@ -8,19 +8,19 @@ import { Reveal } from "@/components/shared/reveal";
 import { CalendlyEmbed } from "@/components/shared/calendly";
 
 const pageUrl = `${siteConfig.url}/personal-trainer-palmetto-fl`;
-const pageTitle = "Personal Trainer in Palmetto, FL | Chaney Fitness";
+const pageTitle = "Mobile & In-Home Personal Trainer in Palmetto, FL | Chaney Fitness";
 
 export const metadata: Metadata = {
   title: { absolute: pageTitle },
   description:
-    "In-person personal training in Palmetto, FL for busy professionals. Evidence-based strength and fat-loss coaching built around your schedule — no contracts, no crash diets. Book a free consult.",
+    "Mobile and in-home personal training in Palmetto, FL — I bring private strength and fat-loss coaching to your home, condo, or a private gym. No contracts, free first session. Book a consult.",
   alternates: { canonical: "/personal-trainer-palmetto-fl" },
   openGraph: {
     type: "website",
     url: pageUrl,
     title: pageTitle,
     description:
-      "In-person and online personal training in Palmetto, FL — strength, fat loss, mobility, and nutrition coaching built around a real schedule.",
+      "Mobile, in-home, and online personal training in Palmetto, FL — private strength, fat loss, and nutrition coaching that comes to you.",
   },
 };
 
@@ -31,18 +31,6 @@ const services = [
   "Flexible nutrition & meal planning",
   "Online / virtual coaching",
   "In-home sessions (I bring the gear)",
-];
-
-const neighborhoods = [
-  "Palmetto Historic District",
-  "Artisan Lakes",
-  "Esplanade at Artisan Lakes",
-  "Eaves Bend at Artisan Lakes",
-  "Trevesta",
-  "Sanctuary Cove",
-  "Willow Walk",
-  "Northwood",
-  "Terra Ceia",
 ];
 
 const faqs = [
@@ -122,7 +110,7 @@ export default function PalmettoPage() {
           </nav>
 
           <span className="eyebrow mt-6">
-            <MapPin className="size-3.5" /> Palmetto, Florida
+            <MapPin className="size-3.5" /> In-Home &amp; Mobile · Palmetto, FL
           </span>
 
           <h1 className="headline mt-5 max-w-4xl text-[clamp(2.4rem,7vw,5rem)] text-white">
@@ -130,11 +118,10 @@ export default function PalmettoPage() {
           </h1>
 
           <p className="mt-6 max-w-prose text-pretty text-lg leading-relaxed text-white/70">
-            Evidence-based strength and fat-loss coaching for busy Palmetto
-            professionals — in person at a private gym, in your home, outdoors,
-            or fully online. No contracts, no crash diets. Just a system that
-            makes you stronger and leaner and still holds up during a 60-hour
-            work week.
+            Mobile, in-home strength and fat-loss coaching for busy Palmetto
+            professionals — I bring the session to your home, condo, or a
+            private gym. No contracts, no crash diets. Just a system that makes
+            you stronger and leaner and holds up during a 60-hour work week.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -207,34 +194,20 @@ export default function PalmettoPage() {
               Where we train
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Most in-person sessions run out of a private gym in Palmetto. When
-              the weather cooperates — which in Palmetto is most of the year —
-              we can also train outdoors at spots like Emerson Point Preserve on
-              Snead Island or along the Manatee River near Regatta Pointe.
-              Prefer to skip the drive entirely? I bring equipment to your home,
-              or we train live over video.
+              Palmetto is home base — it&apos;s where I live and coach, and
+              it&apos;s one of the fastest-growing fitness markets in Manatee
+              County. Most sessions are mobile: I come to your home, condo, or
+              community gym, so training fits your day instead of fighting US-41
+              to a big-box gym. I work with clients everywhere from North River
+              Ranch and Artisan Lakes to Trevesta and the newer communities off
+              Moccasin Wallow.
             </p>
-            <div className="mt-7 rounded-3xl border border-border bg-white p-6 shadow-soft">
-              <h3 className="text-sm font-bold uppercase tracking-[0.14em] text-accent">
-                Neighborhoods I serve around Palmetto
-              </h3>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {neighborhoods.map((n) => (
-                  <span
-                    key={n}
-                    className="rounded-full border border-border bg-muted/50 px-3 py-1.5 text-sm text-ink"
-                  >
-                    {n}
-                  </span>
-                ))}
-              </div>
-              <p className="mt-4 text-sm text-muted-foreground">
-                Plus the newer communities going up along Moccasin Wallow Road
-                and the Artisan Lakes corridor — and quick reach across the
-                Green Bridge into North Bradenton and up US-41 / US-301 toward
-                Parrish and Ellenton.
-              </p>
-            </div>
+            <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
+              Prefer a private facility? We can train at a private gym in
+              Palmetto. When the weather cooperates — most of the year here — we
+              can also work out outdoors at spots like Emerson Point Preserve.
+              And if you&apos;re short on time, we train live over video.
+            </p>
           </Reveal>
         </div>
       </section>
