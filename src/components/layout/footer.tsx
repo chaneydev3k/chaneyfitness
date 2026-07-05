@@ -16,9 +16,9 @@ export function Footer() {
           <div className="max-w-sm">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              {siteConfig.tagline} Private in-home &amp; mobile personal
-              training in Downtown St. Pete and Palmetto — plus online coaching,
-              anywhere.
+              {siteConfig.tagline} Private 1:1 &amp; small-group personal
+              training in Downtown St. Pete and Palmetto — plus live virtual
+              sessions, anywhere.
             </p>
             <div className="mt-5">
               <a
@@ -59,7 +59,7 @@ export function Footer() {
               <ul className="mt-4 space-y-3 text-sm">
                 <li>
                   <Link href="/#programs" className="text-ink/80 transition-colors hover:text-accent">
-                    Online Coaching
+                    Virtual Training
                   </Link>
                 </li>
                 <li>

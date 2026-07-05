@@ -19,7 +19,7 @@ export const siteConfig = {
   name: "Chaney Fitness",
   tagline: "Strength. Performance. Longevity.",
   description:
-    "In-home & mobile personal training in Downtown St. Petersburg, FL — private strength and fat-loss coaching that comes to you. Also serving Palmetto & the Manatee County area, plus online.",
+    "Private 1:1 & small-group personal training in Downtown St. Petersburg, FL and Palmetto — plus live virtual sessions where I coach you through every rep. Get stronger, leaner, and healthier.",
   // Canonical host is www (Jamaal set the apex -> www 301 in Cloudflare).
   url: "https://www.chaneyfitness.com",
   // Anchor city (GBP home base / Pinellas). Manatee County is served via
@@ -120,17 +120,17 @@ export interface Program {
 
 export const programs: Program[] = [
   {
-    id: "online-coaching",
-    name: "Online Coaching",
-    tagline: "Your complete plan, fully remote.",
+    id: "virtual-training",
+    name: "Virtual Training",
+    tagline: "Live 1:1 sessions over video.",
     description:
-      "Premium 1:1 coaching delivered through a dedicated app. Everything you need to train smart and stay accountable, anywhere.",
+      "Real, live 1:1 coaching over video — I'm with you for every rep in real time, not just handing you a program and walking away. The same attention and accountability as in person, from anywhere.",
     features: [
-      "Personalized workouts",
-      "Nutrition coaching",
-      "Weekly check-ins",
+      "Live 1:1 video sessions",
+      "Real-time form coaching",
+      "Personalized programming",
+      "Nutrition & meal planning",
       "Progress tracking",
-      "Exercise video library",
       "Habit coaching",
       "Unlimited messaging",
     ],
@@ -140,9 +140,9 @@ export const programs: Program[] = [
     name: "Executive Coaching",
     tagline: "High-touch coaching for demanding schedules.",
     description:
-      "For leaders and frequent travelers who need performance to keep up with the pace of their life. Everything in Online Coaching, elevated.",
+      "For leaders and frequent travelers who need performance to keep up with the pace of their life. Everything in Virtual Training, elevated.",
     features: [
-      "Everything in Online Coaching",
+      "Everything in Virtual Training",
       "Priority communication",
       "Lifestyle optimization",
       "Travel & hotel-gym planning",
@@ -155,9 +155,9 @@ export const programs: Program[] = [
   {
     id: "personal-training",
     name: "Personal Training",
-    tagline: "Private in-home & mobile, one-on-one.",
+    tagline: "Private 1:1 & small group, in person.",
     description:
-      "In-home and mobile 1:1 coaching across Downtown St. Pete and Palmetto — I bring the session to your home, condo, or building gym, focused on quality movement and real strength gains.",
+      "Private 1:1 and small-group training, in person at a private gym in Downtown St. Pete or Palmetto — real coaching through every rep, focused on quality movement and measurable strength gains.",
     features: [
       "Private 1:1 sessions",
       "Small group sessions",

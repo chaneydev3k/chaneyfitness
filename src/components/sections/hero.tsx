@@ -105,9 +105,10 @@ export function Hero() {
             transition={{ duration: 0.7, ease, delay: 0.14 }}
             className="mt-7 max-w-prose text-pretty text-lg leading-relaxed text-white/70"
           >
-            Private in-home and mobile coaching that helps busy professionals
-            in St. Petersburg get stronger, leaner, and healthier — training
-            that comes to you, on your schedule.
+            Private 1:1 and small-group training, in person in Downtown St.
+            Pete and Palmetto — plus live virtual sessions where I coach you
+            through every rep. Built to make busy professionals stronger,
+            leaner, and healthier.
           </motion.p>
 
           <motion.div
@@ -159,7 +160,7 @@ export function Hero() {
             </span>
             <span className="inline-flex items-center gap-2">
               <MapPin className="size-4 text-accent" />
-              Downtown St. Pete · In-Home &amp; Mobile · Online
+              Downtown St. Pete · Palmetto · Live Virtual
             </span>
           </motion.div>
         </div>

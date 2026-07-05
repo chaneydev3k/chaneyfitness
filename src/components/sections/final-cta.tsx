@@ -39,8 +39,8 @@ export function FinalCta() {
               <div className="flex items-center gap-3 text-white/80">
                 <MapPin className="size-5 text-accent" />
                 <span>
-                  In-home &amp; mobile training across Downtown St. Pete and
-                  Palmetto — plus online coaching, anywhere.
+                  Private 1:1 &amp; small-group training in Downtown St. Pete
+                  and Palmetto — plus live virtual sessions, anywhere.
                 </span>
               </div>
               <div className="flex items-center gap-3 text-white/80">

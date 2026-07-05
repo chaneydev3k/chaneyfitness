@@ -22,7 +22,7 @@ const anton = Anton({
   display: "swap",
 });
 
-const title = `In-Home & Mobile Personal Trainer in ${siteConfig.locality}, FL | ${siteConfig.name}`;
+const title = `Private Personal Trainer in ${siteConfig.locality}, FL | ${siteConfig.name}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
   applicationName: siteConfig.name,
   keywords: [
     "Personal trainer Downtown St Pete",
-    "In-home personal training St Petersburg FL",
-    "Mobile personal trainer St Petersburg",
+    "Private personal trainer St Petersburg FL",
+    "1:1 personal training St Petersburg",
+    "Small group training St Petersburg",
+    "Virtual personal trainer",
     "Personal trainer St. Petersburg FL",
-    "Mobile personal trainer Palmetto FL",
-    "In-home personal trainer Palmetto",
-    "Private fitness coaching Parrish",
-    "Personal trainer Bradenton",
-    "Online personal trainer",
+    "Personal trainer Palmetto FL",
+    "In-home personal training St Petersburg FL",
+    "Private fitness coaching Parrish Bradenton",
     "Strength and fat loss coach St. Petersburg",
   ],
   authors: [{ name: siteConfig.name }],

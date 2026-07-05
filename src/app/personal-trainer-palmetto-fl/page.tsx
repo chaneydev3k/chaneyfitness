@@ -8,35 +8,35 @@ import { Reveal } from "@/components/shared/reveal";
 import { CalendlyEmbed } from "@/components/shared/calendly";
 
 const pageUrl = `${siteConfig.url}/personal-trainer-palmetto-fl`;
-const pageTitle = "Mobile & In-Home Personal Trainer in Palmetto, FL | Chaney Fitness";
+const pageTitle = "Personal Trainer in Palmetto, FL | Chaney Fitness";
 
 export const metadata: Metadata = {
   title: { absolute: pageTitle },
   description:
-    "Mobile and in-home personal training in Palmetto, FL — I bring private strength and fat-loss coaching to your home, condo, or a private gym. No contracts, free first session. Book a consult.",
+    "Private 1:1 and small-group personal training in Palmetto, FL at a private gym — plus live virtual sessions where I coach you through every rep. No contracts, free first session.",
   alternates: { canonical: "/personal-trainer-palmetto-fl" },
   openGraph: {
     type: "website",
     url: pageUrl,
     title: pageTitle,
     description:
-      "Mobile, in-home, and online personal training in Palmetto, FL — private strength, fat loss, and nutrition coaching that comes to you.",
+      "Private 1:1, small-group, and live virtual personal training in Palmetto, FL — strength, fat loss, and nutrition coaching.",
   },
 };
 
 const services = [
-  "One-on-one personal training",
+  "Private 1:1 personal training",
+  "Small-group training",
   "Strength & fat-loss coaching",
   "Mobility & injury prevention",
   "Flexible nutrition & meal planning",
-  "Online / virtual coaching",
-  "In-home sessions (I bring the gear)",
+  "Live virtual sessions (every rep)",
 ];
 
 const faqs = [
   {
     q: "Do you train in-person in Palmetto or only online?",
-    a: "Both. I coach Palmetto clients one-on-one in person — at a private gym in Palmetto, in your home, or outdoors — and I also run fully online coaching for anyone who wants the flexibility.",
+    a: "Both. In person it's private 1:1 or small-group at a private gym in Palmetto (I can also come to you), plus live virtual sessions where I coach you through every rep — not just a program I hand off.",
   },
   {
     q: "Where do sessions happen?",
@@ -110,7 +110,7 @@ export default function PalmettoPage() {
           </nav>
 
           <span className="eyebrow mt-6">
-            <MapPin className="size-3.5" /> In-Home &amp; Mobile · Palmetto, FL
+            <MapPin className="size-3.5" /> Palmetto, Florida
           </span>
 
           <h1 className="headline mt-5 max-w-4xl text-[clamp(2.4rem,7vw,5rem)] text-white">
@@ -118,10 +118,11 @@ export default function PalmettoPage() {
           </h1>
 
           <p className="mt-6 max-w-prose text-pretty text-lg leading-relaxed text-white/70">
-            Mobile, in-home strength and fat-loss coaching for busy Palmetto
-            professionals — I bring the session to your home, condo, or a
-            private gym. No contracts, no crash diets. Just a system that makes
-            you stronger and leaner and holds up during a 60-hour work week.
+            Private 1:1 and small-group strength and fat-loss coaching for busy
+            Palmetto professionals — in person at a private gym, plus live
+            virtual sessions where I coach every rep. No contracts, no crash
+            diets. Just a system that makes you stronger and leaner and holds up
+            during a 60-hour work week.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -196,17 +197,16 @@ export default function PalmettoPage() {
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
               Palmetto is home base — it&apos;s where I live and coach, and
               it&apos;s one of the fastest-growing fitness markets in Manatee
-              County. Most sessions are mobile: I come to your home, condo, or
-              community gym, so training fits your day instead of fighting US-41
-              to a big-box gym. I work with clients everywhere from North River
-              Ranch and Artisan Lakes to Trevesta and the newer communities off
-              Moccasin Wallow.
+              County. Most in-person sessions are private 1:1 or small-group at
+              a private gym here in Palmetto, with clients coming from North
+              River Ranch and Artisan Lakes to Trevesta and the newer
+              communities off Moccasin Wallow.
             </p>
             <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Prefer a private facility? We can train at a private gym in
-              Palmetto. When the weather cooperates — most of the year here — we
-              can also work out outdoors at spots like Emerson Point Preserve.
-              And if you&apos;re short on time, we train live over video.
+              If it&apos;s easier, I can come to you — home, condo, or your
+              community gym. And when you&apos;re short on time, we train live
+              over video, where I coach you through every rep instead of just
+              sending a program.
             </p>
           </Reveal>
         </div>
