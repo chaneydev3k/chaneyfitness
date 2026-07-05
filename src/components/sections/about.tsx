@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site";
 import { Reveal } from "@/components/shared/reveal";
 
 const credentials = [
-  { icon: Award, label: "Certified Personal Trainer" },
+  { icon: Award, label: "ISSA Certified Personal Trainer" },
   { icon: Dumbbell, label: "7 years coaching" },
 ];
 
@@ -24,7 +24,7 @@ export function About() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/portrait.svg"
-              alt="Coach Chaney, founder of Chaney Fitness"
+              alt="Jamaal Chaney, founder of Chaney Fitness"
               width={520}
               height={640}
               loading="lazy"
@@ -32,7 +32,7 @@ export function About() {
             />
             <div className="absolute -bottom-5 -left-5 hidden rounded-2xl border border-border bg-white/90 p-4 shadow-lift backdrop-blur sm:block">
               <p className="font-display text-2xl font-semibold text-ink">
-                Coach Chaney
+                Jamaal Chaney
               </p>
               <p className="text-sm text-muted-foreground">
                 Founder · Head Coach

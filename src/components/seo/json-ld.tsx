@@ -27,8 +27,24 @@ export function OrganizationSchema() {
     logo: `${siteConfig.url}/icon.svg`,
     image: `${siteConfig.url}/opengraph-image`,
     slogan: siteConfig.tagline,
-    sameAs: [siteConfig.social.instagram, siteConfig.social.linkedin],
+    founder: { "@id": `${siteConfig.url}/#coach` },
+    sameAs: [siteConfig.reviewsUrl],
     areaServed: siteConfig.areaServed,
+  };
+  return <JsonLd data={data} />;
+}
+
+/** The coach as a distinct entity — supports E-E-A-T / "who's behind this". */
+export function PersonSchema() {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${siteConfig.url}/#coach`,
+    name: siteConfig.coach.name,
+    jobTitle: siteConfig.coach.jobTitle,
+    worksFor: { "@id": `${siteConfig.url}/#organization` },
+    hasCredential: siteConfig.coach.credential,
+    url: siteConfig.url,
   };
   return <JsonLd data={data} />;
 }
@@ -44,7 +60,8 @@ export function LocalBusinessSchema() {
     email: siteConfig.email,
     telephone: siteConfig.phone,
     image: `${siteConfig.url}/opengraph-image`,
-    priceRange: "$$$",
+    priceRange: "$$",
+    founder: { "@id": `${siteConfig.url}/#coach` },
     address: {
       "@type": "PostalAddress",
       addressLocality: siteConfig.locality,
@@ -61,7 +78,7 @@ export function LocalBusinessSchema() {
       "@type": "City",
       name,
     })),
-    sameAs: [siteConfig.social.instagram, siteConfig.social.linkedin],
+    sameAs: [siteConfig.reviewsUrl],
     makesOffer: programs.map((p) => ({
       "@type": "Offer",
       itemOffered: {
@@ -108,6 +125,7 @@ export function SiteJsonLd() {
   return (
     <>
       <OrganizationSchema />
+      <PersonSchema />
       <LocalBusinessSchema />
       <WebsiteSchema />
       <FaqSchema />

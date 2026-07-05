@@ -1,8 +1,9 @@
 import * as React from "react";
-import { Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 import { navLinks, siteConfig } from "@/lib/site";
 import { Logo } from "@/components/layout/logo";
+import { GoogleG } from "@/components/shared/google-reviews";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -18,24 +19,15 @@ export function Footer() {
               {siteConfig.locality} and across Manatee County — plus online
               coaching, anywhere.
             </p>
-            <div className="mt-5 flex items-center gap-2">
+            <div className="mt-5">
               <a
-                href={siteConfig.social.instagram}
+                href={siteConfig.reviewsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Chaney Fitness on Instagram"
-                className="grid size-10 place-items-center rounded-full border border-border text-ink transition-colors hover:border-ink/30 hover:bg-muted"
+                aria-label="Chaney Fitness reviews on Google"
+                className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-semibold text-ink transition-colors hover:border-ink/30 hover:bg-muted"
               >
-                <Instagram className="size-[18px]" />
-              </a>
-              <a
-                href={siteConfig.social.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Chaney Fitness on LinkedIn"
-                className="grid size-10 place-items-center rounded-full border border-border text-ink transition-colors hover:border-ink/30 hover:bg-muted"
-              >
-                <Linkedin className="size-[18px]" />
+                <GoogleG className="size-4" /> 5.0 on Google
               </a>
             </div>
           </div>

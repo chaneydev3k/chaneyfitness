@@ -47,9 +47,11 @@ export const siteConfig = {
     "https://calendly.com/chaneyfitnessfla/15min?hide_gdpr_banner=1&background_color=0b0b0b&text_color=ffffff&primary_color=3b82f6",
   // Google Business Profile reviews (share link).
   reviewsUrl: "https://share.google/60izWuCx8WjJfpBlm",
-  social: {
-    instagram: "https://instagram.com/weneedchan3y",
-    linkedin: "https://linkedin.com/company/chaneyfitness",
+  // Coach identity for the Person/founder schema + About (real EEAT signals).
+  coach: {
+    name: "Jamaal Chaney",
+    jobTitle: "Certified Personal Trainer & Fitness Coach",
+    credential: "ISSA Certified Personal Trainer",
   },
 } as const;
 
