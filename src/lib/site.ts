@@ -194,34 +194,35 @@ export interface Testimonial {
   initials: string;
 }
 
+// Real reviews from the Google Business Profile (faithfully excerpted).
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "I travel three weeks a month. For the first time, my training actually fits my life — and I'm stronger at 44 than I was at 30.",
-    name: "Daniel R.",
-    role: "VP, Private Equity",
-    initials: "DR",
+      "What sets Chaney Fitness apart is how hands-on Jamaal is. He's right there coaching you through every rep and knows exactly when to push and when to pull back. I've made real progress, and my confidence is through the roof.",
+    name: "Andrew D.",
+    role: "Google review",
+    initials: "AD",
   },
   {
     quote:
-      "Jamaal is really someone who pays attention. I've lost 28 lbs and am keeping it off for a year now.",
-    name: "Marcus T.",
-    role: "Founder & CEO",
-    initials: "MT",
+      "I lost 8 pounds during my first month while building healthier habits and becoming more confident in the gym. His guidance has made fitness feel sustainable rather than overwhelming.",
+    name: "Josef M.",
+    role: "Google review",
+    initials: "JM",
   },
   {
     quote:
-      "As a mom of three running a company, I needed something realistic. The habit coaching changed how I think about my health.",
-    name: "Priya S.",
-    role: "Lawyer",
-    initials: "PS",
+      "My wife and I just had a baby and our schedules were tight. Jamaal went above and beyond — I highly recommend this to hardworking professionals who are crunched for time and want the best possible results.",
+    name: "Noah K.",
+    role: "Google review",
+    initials: "NK",
   },
   {
     quote:
-      "Former college athlete, then ten years behind a desk. This rebuilt my strength and my mobility without wrecking my knees.",
-    name: "Chris W.",
-    role: "Director of Engineering",
-    initials: "CW",
+      "It's been the best decision of my life. The programs are very efficient and I've progressed tremendously. I highly recommend Chaney Fitness whether you're just getting into working out or an advanced lifter.",
+    name: "Bryan T.",
+    role: "Google review",
+    initials: "BT",
   },
 ];
 
