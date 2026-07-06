@@ -221,55 +221,6 @@ export const testimonials: Testimonial[] = [
 ];
 
 /* -------------------------------------------------------------------------- */
-/*  Transformations                                                            */
-/* -------------------------------------------------------------------------- */
-
-export interface Transformation {
-  id: string;
-  label: string;
-  name: string;
-  meta: string;
-  story: string;
-  beforeSrc: string;
-  afterSrc: string;
-}
-
-// Illustrative coaching scenarios by goal type — NOT specific clients or
-// results. Real before/after photos go here once available (with permission).
-export const transformations: Transformation[] = [
-  {
-    id: "fat-loss",
-    label: "Fat loss",
-    name: "Fat loss on a packed schedule",
-    meta: "Strength + travel-proof nutrition",
-    story:
-      "An example of how fat-loss coaching gets structured for a busy professional: efficient strength sessions timed around meetings, plus a nutrition approach built to survive travel — so progress keeps compounding even on a 60-hour week.",
-    beforeSrc: "/transformations/before-1.svg",
-    afterSrc: "/transformations/after-1.svg",
-  },
-  {
-    id: "energy-parent",
-    label: "Parents",
-    name: "Strength & energy for parents",
-    meta: "A few focused sessions a week",
-    story:
-      "How a plan adapts for a founder with kids: a handful of short, focused strength sessions and a few keystone habits designed to rebuild energy and strength — without adding hours to an already-full week.",
-    beforeSrc: "/transformations/before-2.svg",
-    afterSrc: "/transformations/after-2.svg",
-  },
-  {
-    id: "former-athlete",
-    label: "Former athletes",
-    name: "Rebuilding a former athlete",
-    meta: "Strength + mobility, joint-friendly",
-    story:
-      "What a return-to-strength plan looks like for a former athlete: rebuilding capacity with mobility and injury-prevention work, so the body ends up feeling better — not beaten up.",
-    beforeSrc: "/transformations/before-3.svg",
-    afterSrc: "/transformations/after-3.svg",
-  },
-];
-
-/* -------------------------------------------------------------------------- */
 /*  Coaching process                                                          */
 /* -------------------------------------------------------------------------- */
 
