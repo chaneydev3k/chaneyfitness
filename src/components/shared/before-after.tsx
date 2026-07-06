@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { MoveHorizontal } from "lucide-react";
+import { ChevronsLeftRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -77,7 +77,7 @@ export function BeforeAfter({
     <div
       ref={containerRef}
       className={cn(
-        "group relative aspect-[4/5] w-full select-none overflow-hidden rounded-3xl border border-border bg-muted shadow-lift",
+        "group relative aspect-[4/5] w-full cursor-ew-resize select-none overflow-hidden rounded-3xl border border-border bg-muted shadow-lift",
         className
       )}
       onMouseDown={(e) => {
@@ -122,7 +122,7 @@ export function BeforeAfter({
 
       {/* Divider + handle */}
       <div
-        className="absolute inset-y-0 z-10 w-px bg-white/90 shadow-[0_0_0_1px_rgba(0,0,0,0.06)]"
+        className="absolute inset-y-0 z-10 w-0.5 -translate-x-1/2 bg-white shadow-[0_0_0_1px_rgba(0,0,0,0.12)]"
         style={{ left: `${position}%` }}
       >
         <button
@@ -142,9 +142,9 @@ export function BeforeAfter({
             e.stopPropagation();
             setDragging(true);
           }}
-          className="absolute left-1/2 top-1/2 grid size-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-ink shadow-lift outline-none ring-accent transition-transform duration-300 ease-premium hover:scale-105 focus-visible:ring-2 active:scale-95"
+          className="absolute left-1/2 top-1/2 grid size-14 -translate-x-1/2 -translate-y-1/2 cursor-ew-resize place-items-center rounded-full border-2 border-accent bg-white text-accent shadow-lift outline-none transition-transform duration-300 ease-premium hover:scale-110 focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 active:scale-95"
         >
-          <MoveHorizontal className="size-5" />
+          <ChevronsLeftRight className="size-6" strokeWidth={2.5} />
         </button>
       </div>
     </div>
