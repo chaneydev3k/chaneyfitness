@@ -8,6 +8,7 @@ const routes: { path: string; priority: number }[] = [
   { path: "", priority: 1 },
   { path: "personal-trainer-st-petersburg-fl", priority: 0.9 },
   { path: "personal-trainer-palmetto-fl", priority: 0.8 },
+  { path: "personal-trainer-bradenton-fl", priority: 0.8 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

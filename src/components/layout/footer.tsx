@@ -96,7 +96,14 @@ export function Footer() {
                     Personal Trainer in Palmetto
                   </Link>
                 </li>
-                <li className="text-ink/50">Bradenton (soon)</li>
+                <li>
+                  <Link
+                    href="/personal-trainer-bradenton-fl"
+                    className="text-ink/80 transition-colors hover:text-accent"
+                  >
+                    Personal Trainer in Bradenton
+                  </Link>
+                </li>
               </ul>
             </div>
 
