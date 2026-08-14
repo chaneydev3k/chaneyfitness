@@ -14,7 +14,6 @@ import { ArrowRight, MapPin, ShieldCheck, Star } from "lucide-react";
 
 import { siteConfig } from "@/lib/site";
 import { Button } from "@/components/ui/button";
-import { BeforeAfter } from "@/components/shared/before-after";
 import { GoogleG } from "@/components/shared/google-reviews";
 
 const ease = [0.22, 1, 0.36, 1] as const;
@@ -39,7 +38,6 @@ export function Hero() {
   });
   const yShapeA = useTransform(scrollYProgress, [0, 1], [0, -90]);
   const yShapeB = useTransform(scrollYProgress, [0, 1], [0, 120]);
-  const heroFade = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   const onMouseMove = (e: React.MouseEvent) => {
     if (reduceMotion) return;
@@ -74,9 +72,9 @@ export function Hero() {
         <div className="absolute left-[8%] bottom-28 hidden size-14 rotate-12 border border-white/10 bg-white/[0.03] backdrop-blur-sm lg:block animate-float-slow [animation-delay:1.5s]" />
       </div>
 
-      <div className="container-tight grid w-full items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
+      <div className="container-tight w-full">
         {/* Copy */}
-        <div>
+        <div className="max-w-4xl">
           <motion.div
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -165,31 +163,6 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* Interactive before/after */}
-        <motion.div
-          style={{ opacity: reduceMotion ? 1 : heroFade }}
-          initial={reduceMotion ? false : { opacity: 0, scale: 0.96, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.9, ease, delay: 0.15 }}
-          className="relative mx-auto w-full max-w-md"
-        >
-          <BeforeAfter
-            beforeSrc="/transformations/before-1.svg"
-            afterSrc="/transformations/after-1.svg"
-            beforeAlt="Illustrative before-and-after silhouette — starting point"
-            afterAlt="Illustrative before-and-after silhouette — after coaching"
-            initial={52}
-            className="border-2 border-white/10"
-          />
-          <div className="pointer-events-none absolute -bottom-5 left-1/2 w-[88%] -translate-x-1/2 rounded-2xl border border-white/10 bg-ink-soft/95 p-4 shadow-lift backdrop-blur">
-            <div className="flex items-center justify-between text-sm">
-              <span className="font-bold uppercase tracking-wide text-white">
-                Drag to compare
-              </span>
-              <span className="text-white/55">Illustrative</span>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       {/* Scroll cue */}
