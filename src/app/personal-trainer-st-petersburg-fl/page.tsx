@@ -7,52 +7,52 @@ import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/shared/reveal";
 import { CalendlyEmbed } from "@/components/shared/calendly";
 
-const pageUrl = `${siteConfig.url}/personal-trainer-palmetto-fl`;
-const pageTitle = "Personal Trainer in Palmetto, FL | Chaney Fitness";
+const pageUrl = `${siteConfig.url}/personal-trainer-st-petersburg-fl`;
+const pageTitle = "Personal Trainer in St. Petersburg, FL | Chaney Fitness";
 
 export const metadata: Metadata = {
   title: { absolute: pageTitle },
   description:
-    "Private 1:1 and small-group personal training in Palmetto, FL at a private gym — plus live virtual sessions where I coach you through every rep. No contracts, free first session.",
-  alternates: { canonical: "/personal-trainer-palmetto-fl" },
+    "Private 1:1 and small-group personal training in Downtown St. Petersburg, FL at a private gym — plus live virtual sessions where I coach you through every rep. No contracts, free first session.",
+  alternates: { canonical: "/personal-trainer-st-petersburg-fl" },
   openGraph: {
     type: "website",
     url: pageUrl,
     title: pageTitle,
     description:
-      "Private 1:1, small-group, and live virtual personal training in Palmetto, FL — strength, fat loss, and nutrition coaching.",
+      "Private 1:1, small-group, and live virtual personal training in Downtown St. Petersburg, FL — fat loss, strength, and nutrition coaching.",
   },
 };
 
 const services = [
   "Private 1:1 personal training",
   "Small-group training",
-  "Strength & fat-loss coaching",
-  "Mobility & injury prevention",
+  "Fat loss & body recomposition",
+  "Strength & toning",
   "Flexible nutrition & meal planning",
   "Live virtual sessions (every rep)",
 ];
 
 const faqs = [
   {
-    q: "Do you train in-person in Palmetto or only online?",
-    a: "Both. In person it's private 1:1 or small-group at a private gym in Palmetto (I can also come to you), plus live virtual sessions where I coach you through every rep — not just a program I hand off.",
+    q: "Do you train in person in St. Pete or only virtual?",
+    a: "Both. In person it's private 1:1 or small-group at a private gym in Downtown St. Pete — and I can come to your condo, apartment, or building gym if that's easier. I also run live virtual sessions where I coach you through every rep, not just send a program.",
   },
   {
-    q: "Where do sessions happen?",
-    a: "In-person sessions run out of a private gym in Palmetto, in your home (I bring the equipment), or outdoors at spots like Emerson Point Preserve on Snead Island. Prefer to train remotely? Virtual sessions work just as well.",
+    q: "Where do sessions happen in St. Petersburg?",
+    a: "Most in-person training is at a private gym in Downtown St. Pete, or on-site at your building's gym or home. It means no fighting for parking or waiting on equipment at a big-box gym. Prefer to train remotely? Live virtual sessions work from anywhere.",
   },
   {
-    q: "I'm a beginner and haven't trained in years — is that a problem?",
-    a: "Not at all — that's most of who I work with. Every plan begins from your real starting point after an individual assessment, so we build from where you actually are.",
+    q: "I'm a beginner and haven't trained in years — can you help?",
+    a: "Absolutely — that's most of who I work with. Every plan begins from your real starting point after an individual assessment, so we build from where you actually are.",
   },
   {
-    q: "How much does a personal trainer in Palmetto cost?",
-    a: "Your first session is a free evaluation so you can see exactly how I coach. After that, sessions run $65–85, and most clients train on a package — for example, 12 sessions for $900 or 24 sessions for $1,750 — used at a 2–4x per week cadence that fits their week.",
+    q: "How much does a personal trainer in St. Petersburg cost?",
+    a: "Your first session is a free evaluation so you can see how I coach. After that, sessions run $65–85, and most clients train on a package — for example 12 sessions for $900 or 24 for $1,750 — at a 2–4x per week cadence that fits their schedule.",
   },
   {
     q: "Do you help with nutrition too?",
-    a: "Yes — flexible nutrition and meal-planning coaching built around your tastes and schedule, not a rigid meal plan you will abandon in two weeks.",
+    a: "Yes — flexible nutrition and meal-planning coaching built around your tastes and schedule, not a rigid meal plan you'll abandon. Eating right is a core part of the fat-loss results.",
   },
 ];
 
@@ -74,13 +74,13 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Personal Trainer in Palmetto, FL",
+      name: "Personal Trainer in St. Petersburg, FL",
       item: pageUrl,
     },
   ],
 };
 
-export default function PalmettoPage() {
+export default function StPetersburgPage() {
   return (
     <>
       <script
@@ -92,7 +92,7 @@ export default function PalmettoPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* Hero (dark — keeps the nav legible + on-brand) */}
+      {/* Hero (dark) */}
       <section className="relative isolate overflow-hidden bg-ink pb-20 pt-32 text-white sm:pt-36">
         <div aria-hidden className="absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_-20%,#15151a_0%,#0B0B0B_60%)]" />
@@ -106,29 +106,30 @@ export default function PalmettoPage() {
               Home
             </Link>
             <span className="mx-2">/</span>
-            <span className="text-white/80">Personal Trainer in Palmetto, FL</span>
+            <span className="text-white/80">
+              Personal Trainer in St. Petersburg, FL
+            </span>
           </nav>
 
           <span className="eyebrow mt-6">
-            <MapPin className="size-3.5" /> Palmetto, Florida
+            <MapPin className="size-3.5" /> Downtown St. Pete, FL
           </span>
 
           <h1 className="headline mt-5 max-w-4xl text-[clamp(2.4rem,7vw,5rem)] text-white">
-            Personal Training in Palmetto, FL
+            Personal Training in St. Petersburg, FL
           </h1>
 
           <p className="mt-6 max-w-prose text-pretty text-lg leading-relaxed text-white/70">
             Private 1:1 and small-group strength and fat-loss coaching for busy
-            Palmetto professionals — in person at a private gym, plus live
-            virtual sessions where I coach every rep. No contracts, no crash
-            diets. Just a system that makes you stronger and leaner and holds up
-            during a 60-hour work week.
+            Downtown St. Pete professionals — in person at a private gym, plus
+            live virtual sessions where I coach every rep. No contracts, no
+            crash diets. Just a system that keeps working through a packed week.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Button asChild variant="accent" size="xl">
               <a href="#book">
-                Book your free Palmetto consult
+                Book your free St. Pete consult
                 <ArrowRight className="size-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
               </a>
             </Button>
@@ -144,19 +145,18 @@ export default function PalmettoPage() {
         <div className="container-tight max-w-3xl">
           <Reveal>
             <h2 className="headline text-[2rem] text-ink sm:text-4xl">
-              Coaching built around how Palmetto professionals actually live
+              Coaching built for how Downtown St. Pete actually lives
             </h2>
           </Reveal>
           <Reveal delay={0.05}>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground">
-              If your calendar runs your day and your training is the first thing
-              that gets cut, you are exactly who I built this for. I coach busy
-              professionals across Palmetto — from the Historic District to the
-              newer communities off Moccasin Wallow — with programming designed
-              around a real schedule, not an influencer&apos;s. Everything starts
-              with an assessment of how you move, where you&apos;re strong, and
-              what your week actually allows, then I build training and nutrition
-              around that.
+              Downtown St. Pete is condos, high-rises, and people working long
+              hours a few blocks from the water. If your building gym sits unused
+              and training is the first thing that gets cut when work gets busy,
+              that&apos;s exactly who I built this for. Every plan starts with an
+              assessment of how you move and what your week allows — then the
+              focus is simple: lose fat, get stronger and more toned, and eat
+              right without a rigid meal plan you&apos;ll quit.
             </p>
           </Reveal>
         </div>
@@ -167,11 +167,11 @@ export default function PalmettoPage() {
         <div className="container-tight grid gap-12 lg:grid-cols-2">
           <Reveal>
             <h2 className="headline text-[2rem] text-ink sm:text-4xl">
-              How I train clients in Palmetto
+              How I train clients in St. Pete
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Every plan is one-on-one and built for your body, your goals, and
-              the time you actually have. Core services:
+              Every plan is built for your body, your goals, and the time you
+              actually have. Core services:
             </p>
             <ul className="mt-7 grid gap-3 sm:grid-cols-2">
               {services.map((s) => (
@@ -195,18 +195,15 @@ export default function PalmettoPage() {
               Where we train
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Palmetto is home base — it&apos;s where I live and coach, and
-              it&apos;s one of the fastest-growing fitness markets in Manatee
-              County. Most in-person sessions are private 1:1 or small-group at
-              a private gym here in Palmetto, with clients coming from North
-              River Ranch and Artisan Lakes to Trevesta and the newer
-              communities off Moccasin Wallow.
+              Most in-person sessions are private 1:1 or small-group at a private
+              gym in Downtown St. Pete. If it&apos;s easier, I&apos;ll come to
+              you — your condo, apartment, or building gym — anywhere from
+              Downtown and the Old Northeast to the EDGE District and Kenwood.
             </p>
             <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-              If it&apos;s easier, I can come to you — home, condo, or your
-              community gym. And when you&apos;re short on time, we train live
-              over video, where I coach you through every rep instead of just
-              sending a program.
+              Short on time or traveling for work? We train live over video,
+              where I coach you through every rep in real time instead of just
+              handing you a program and walking away.
             </p>
           </Reveal>
         </div>
@@ -217,14 +214,13 @@ export default function PalmettoPage() {
         <div className="container-tight grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <Reveal>
             <h2 className="headline text-[2rem] text-ink sm:text-4xl">
-              Getting started from anywhere in Palmetto
+              Getting started in St. Pete
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
-              Because I come to you — or we meet at a set training spot — you
-              don&apos;t need to fight US-41 traffic to a big-box gym. Your first
-              session is a free evaluation: you get a real workout, see exactly
-              how I coach, and we map out a plan. Most Palmetto clients are
-              training within a week of that consult.
+              Your first session is a free evaluation: you get a real workout,
+              see exactly how I coach, and we map out a plan around your goals
+              and schedule. Most St. Pete clients are training within a week of
+              that consult.
             </p>
           </Reveal>
 
@@ -263,11 +259,11 @@ export default function PalmettoPage() {
         </div>
       </section>
 
-      {/* FAQ — server-rendered <details> so answers are always in the DOM */}
+      {/* FAQ — server-rendered */}
       <section className="bg-muted/40 py-20 sm:py-28">
         <div className="container-tight max-w-3xl">
           <h2 className="headline text-[2rem] text-ink sm:text-4xl">
-            Palmetto personal training FAQ
+            St. Pete personal training FAQ
           </h2>
           <div className="mt-10 divide-y divide-border border-y border-border">
             {faqs.map((f) => (
@@ -296,16 +292,16 @@ export default function PalmettoPage() {
             </Link>{" "}
             ·{" "}
             <Link
-              href="/personal-trainer-st-petersburg-fl"
+              href="/personal-trainer-palmetto-fl"
               className="font-semibold text-accent hover:underline"
             >
-              St. Petersburg
+              Palmetto
             </Link>
           </p>
         </div>
       </section>
 
-      {/* Booking CTA (embedded scheduler) */}
+      {/* Booking CTA */}
       <section id="book" className="relative overflow-hidden bg-ink py-20 text-white sm:py-28">
         <div
           aria-hidden
@@ -315,7 +311,7 @@ export default function PalmettoPage() {
           <div className="max-w-xl">
             <span className="eyebrow">Book your consultation</span>
             <h2 className="headline mt-5 text-balance text-[2.4rem] sm:text-5xl">
-              Start with a free session in Palmetto.
+              Start with a free session in St. Pete.
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-white/70">
               Grab a time below. We&apos;ll talk through your goals, do a real

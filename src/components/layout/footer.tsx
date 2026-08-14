@@ -82,13 +82,20 @@ export function Footer() {
               <ul className="mt-4 space-y-3 text-sm">
                 <li>
                   <Link
+                    href="/personal-trainer-st-petersburg-fl"
+                    className="text-ink/80 transition-colors hover:text-accent"
+                  >
+                    Personal Trainer in St. Petersburg
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/personal-trainer-palmetto-fl"
                     className="text-ink/80 transition-colors hover:text-accent"
                   >
                     Personal Trainer in Palmetto
                   </Link>
                 </li>
-                <li className="text-ink/50">St. Petersburg (soon)</li>
                 <li className="text-ink/50">Bradenton (soon)</li>
               </ul>
             </div>
