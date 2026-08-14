@@ -21,6 +21,7 @@ const ease = [0.22, 1, 0.36, 1] as const;
 export function Hero() {
   const reduceMotion = useReducedMotion();
   const sectionRef = React.useRef<HTMLElement>(null);
+  const videoRef = React.useRef<HTMLVideoElement>(null);
 
   // Mouse-reactive lighting.
   const mouseX = useMotionValue(0.5);
@@ -47,6 +48,15 @@ export function Hero() {
     mouseY.set((e.clientY - rect.top) / rect.height);
   };
 
+  // Guarantee muted autoplay (browser policy) and respect reduced-motion.
+  React.useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.muted = true;
+    if (reduceMotion) v.pause();
+    else v.play().catch(() => {});
+  }, [reduceMotion]);
+
   return (
     <section
       id="top"
@@ -72,9 +82,9 @@ export function Hero() {
         <div className="absolute left-[8%] bottom-28 hidden size-14 rotate-12 border border-white/10 bg-white/[0.03] backdrop-blur-sm lg:block animate-float-slow [animation-delay:1.5s]" />
       </div>
 
-      <div className="container-tight w-full">
+      <div className="container-tight grid w-full items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
         {/* Copy */}
-        <div className="max-w-4xl">
+        <div>
           <motion.div
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -163,6 +173,27 @@ export function Hero() {
           </motion.div>
         </div>
 
+        {/* Training video (real footage) */}
+        <motion.div
+          initial={reduceMotion ? false : { opacity: 0, scale: 0.96, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.9, ease, delay: 0.15 }}
+          className="relative mx-auto w-full max-w-sm"
+        >
+          <video
+            ref={videoRef}
+            className="aspect-[9/16] w-full rounded-3xl border-2 border-white/10 bg-ink-soft object-cover shadow-lift"
+            poster="/training-poster.jpg"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label="Jamaal Chaney coaching a training session"
+          >
+            <source src="/training.mp4" type="video/mp4" />
+          </video>
+        </motion.div>
       </div>
 
       {/* Scroll cue */}
