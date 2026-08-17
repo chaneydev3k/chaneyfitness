@@ -44,6 +44,7 @@ export function PersonSchema() {
     jobTitle: siteConfig.coach.jobTitle,
     worksFor: { "@id": `${siteConfig.url}/#organization` },
     hasCredential: siteConfig.coach.credential,
+    image: `${siteConfig.url}/portrait.jpg`,
     url: siteConfig.url,
   };
   return <JsonLd data={data} />;

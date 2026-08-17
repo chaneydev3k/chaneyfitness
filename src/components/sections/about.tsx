@@ -23,12 +23,12 @@ export function About() {
             />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/portrait.svg"
-              alt="Jamaal Chaney, founder of Chaney Fitness"
-              width={520}
-              height={640}
+              src="/portrait.jpg"
+              alt="Jamaal Chaney, ISSA-certified personal trainer and founder of Chaney Fitness, at his training studio"
+              width={917}
+              height={1400}
               loading="lazy"
-              className="aspect-[4/5] w-full rounded-3xl border border-border object-cover shadow-lift"
+              className="aspect-[4/5] w-full rounded-3xl border border-border object-cover object-top shadow-lift"
             />
             <div className="absolute -bottom-5 -left-5 hidden rounded-2xl border border-border bg-white/90 p-4 shadow-lift backdrop-blur sm:block">
               <p className="font-display text-2xl font-semibold text-ink">
