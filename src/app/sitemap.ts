@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 
 import { siteConfig } from "@/lib/site";
 
+export const dynamic = "force-static";
+
 // Real, indexable routes. (Hash anchors aren't distinct URLs, so they don't
 // belong here.) Add new pages — service pages, city pages — as they ship.
 const routes: { path: string; priority: number }[] = [

@@ -1,27 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Fully static site — export a plain `out/` folder Cloudflare Pages serves
+  // directly. No server/adapter (drops the flaky @cloudflare/next-on-pages).
+  output: "export",
   reactStrictMode: true,
   poweredByHeader: false,
-  compress: true,
   images: {
-    formats: ["image/avif", "image/webp"],
+    // No image-optimization server in a static export.
+    unoptimized: true,
   },
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: [
-          { key: "X-Content-Type-Options", value: "nosniff" },
-          { key: "X-Frame-Options", value: "SAMEORIGIN" },
-          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-          {
-            key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=()",
-          },
-        ],
-      },
-    ];
-  },
+  // NOTE: security headers now live in public/_headers (headers() needs a
+  // server and is ignored by output: "export").
 };
 
 export default nextConfig;
