@@ -111,61 +111,79 @@ export const pillars: { title: string; body: string; icon: LucideIcon }[] = [
 export interface Program {
   id: string;
   name: string;
+  /** Punchy headline statement shown under the package name. */
   tagline: string;
   description: string;
   features: string[];
+  /** Fixed price (e.g. "$550"); omit for consult-based pricing. */
+  price?: string;
+  priceNote?: string;
+  /** Small caveat footnote under the features. */
+  note?: string;
   highlight?: boolean;
   badge?: string;
 }
 
 export const programs: Program[] = [
   {
-    id: "virtual-training",
-    name: "Virtual Training",
-    tagline: "Live 1:1 sessions over video.",
+    id: "online-coaching",
+    name: "Online Coaching",
+    tagline: "Personalized training. Real coaching. From anywhere.",
     description:
-      "Real, live 1:1 coaching over video — I'm with you for every rep in real time, not just handing you a program and walking away. The same attention and accountability as in person, from anywhere.",
+      "Custom workouts delivered through the Chaney Fitness app, with ongoing coaching, nutrition guidance, progress tracking, and direct messaging.",
     features: [
-      "Live 1:1 video sessions",
-      "Real-time form coaching",
-      "Personalized programming",
-      "Nutrition & meal planning",
+      "Custom training plan",
+      "Ongoing 1:1 coaching",
+      "Nutrition guidance",
+      "Weekly check-ins",
       "Progress tracking",
-      "Habit coaching",
-      "Unlimited messaging",
+      "Direct messaging",
+      "Chaney Fitness app access",
     ],
+    price: "$150",
+    priceNote: "per month",
   },
   {
-    id: "executive-coaching",
-    name: "Executive Coaching",
-    tagline: "High-touch coaching for demanding schedules.",
+    id: "small-group-training",
+    name: "Small Group Training",
+    tagline: "3x/week. 40–50 minutes. Built to get you fit.",
     description:
-      "For leaders and frequent travelers who need performance to keep up with the pace of their life. Everything in Virtual Training, elevated.",
+      "Build strength, improve conditioning, and get a complete workout in under an hour. Each coach-led session mixes strength, cardio, functional movement, and HIIT — scaled to your level, in a small group of just 2–6.",
     features: [
-      "Everything in Virtual Training",
-      "Priority communication",
-      "Lifestyle optimization",
-      "Travel & hotel-gym planning",
-      "Performance coaching",
-      "High-touch accountability",
+      "3 coached workouts every week",
+      "40–50 minute sessions",
+      "Strength & conditioning",
+      "Cardio & HIIT",
+      "Functional movement",
+      "Fat loss & fitness",
+      "Small groups of 2–6",
+      "Real-time coaching & form correction",
+      "Workouts scaled to your fitness level",
+      "Make-up sessions available",
     ],
+    price: "$550",
+    priceNote: "per month",
+    note: "Includes diet planning and goal setting. Schedule is built around member demand.",
     highlight: true,
     badge: "Most popular",
   },
   {
     id: "personal-training",
     name: "Personal Training",
-    tagline: "Private 1:1 & small group, in person.",
+    tagline: "Private 1:1 coaching — fully custom and flexible.",
     description:
-      "Private 1:1 and small-group training, in person at a private gym in Downtown St. Pete or Palmetto — real coaching through every rep, focused on quality movement and measurable strength gains.",
+      "Training built completely around you — private 1:1 coaching with a flexible schedule and programming designed for your goals. Train in person at a private gym in Downtown St. Pete or Palmetto, or virtually from anywhere.",
     features: [
-      "Private 1:1 sessions",
-      "Small group sessions",
+      "Private 1:1 coaching",
+      "In-person or virtual",
+      "Flexible scheduling",
+      "Fully personalized programming",
+      "Real-time form coaching",
       "Strength & fat loss",
       "Athletic performance",
-      "Mobility & injury prevention",
-      "Movement quality",
-      "Form coaching in real time",
+      "Mobility & movement quality",
+      "Nutrition & lifestyle guidance",
+      "Progress tracking",
     ],
   },
 ];
@@ -322,7 +340,7 @@ export const faqs: { question: string; answer: string }[] = [
   {
     question: "How often do we meet?",
     answer:
-      "Online and Executive clients have structured weekly check-ins plus ongoing messaging. In-person Personal Training is scheduled around your calendar, typically two to three sessions per week.",
+      "It depends on the program. Online Coaching runs on your schedule with weekly check-ins and messaging; Small Group Training is three coached sessions a week; in-person Personal Training is scheduled around your calendar, typically two to three sessions per week.",
   },
   {
     question: "Do you provide nutrition guidance?",

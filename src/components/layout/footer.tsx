@@ -59,12 +59,12 @@ export function Footer() {
               <ul className="mt-4 space-y-3 text-sm">
                 <li>
                   <Link href="/#programs" className="text-ink/80 transition-colors hover:text-accent">
-                    Virtual Training
+                    Online Coaching
                   </Link>
                 </li>
                 <li>
                   <Link href="/#programs" className="text-ink/80 transition-colors hover:text-accent">
-                    Executive Coaching
+                    Small Group Training
                   </Link>
                 </li>
                 <li>
