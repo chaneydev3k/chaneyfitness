@@ -52,22 +52,32 @@ export function About() {
           <Reveal delay={0.05} className="mt-6 space-y-4 text-pretty text-lg leading-relaxed text-muted-foreground">
             <div className="space-y-4">
               <p>
-                I grew up an athlete and spent years chasing performance the
-                hard way — too much intensity, not enough strategy. Then I built
-                a career, and learned what it actually takes to stay strong when
-                your calendar isn&apos;t your own.
+                I grew up playing sports and spent years learning what it takes
+                to get stronger, move better, and perform at a high level. Like
+                a lot of athletes, I also learned the hard way that working
+                harder doesn&apos;t always mean getting better. Training needs
+                to have a purpose.
               </p>
               <p>
-                {siteConfig.name} is the result: an evidence-based approach for
-                adults who refuse to choose between their ambition and their
-                health. No fads, no shame, no all-or-nothing. Just smart
-                programming, honest accountability, and habits that hold up in
-                real life.
+                As my career and responsibilities grew, I realized the same
+                thing applies outside of sports. You can have a demanding
+                career, raise a family, and still take care of yourself. It just
+                takes a smarter approach and a plan you can actually stick to.
               </p>
               <p>
-                My job isn&apos;t to get you ready for a photo. It&apos;s to
-                build a body that performs — for your work, your family, and the
-                next thirty years.
+                That&apos;s what I built {siteConfig.name} around. Evidence-based
+                training, personalized programming, and real accountability for
+                people who want to get stronger, leaner, and healthier without
+                putting their entire life on hold. I work with all training
+                levels, from people stepping into the gym for the first time to
+                experienced athletes looking to take their performance to the
+                next level. My clients typically lose 20–30 pounds while
+                building the strength and habits to maintain those results.
+              </p>
+              <p>
+                Whether you&apos;re just getting started or you&apos;ve been
+                training for years, my goal is to give you a program that fits
+                where you are now and helps you keep progressing.
               </p>
             </div>
           </Reveal>

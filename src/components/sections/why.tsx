@@ -13,7 +13,7 @@ export function Why() {
         <SectionHeading
           eyebrow="Why Chaney Fitness"
           title="Coaching that respects how you actually live."
-          description="This isn't bodybuilding or six-week transformations. It's a calm, intelligent system built to make you stronger for decades — designed around your schedule, not the other way around."
+          description="This is structured, purposeful training designed to get you results without wasting time. Your program is built around your goals, your schedule, and your current fitness level — so you can make meaningful progress without putting your life on hold."
         />
 
         <RevealGroup className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
