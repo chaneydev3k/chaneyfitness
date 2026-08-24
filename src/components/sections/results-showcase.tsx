@@ -22,7 +22,6 @@ export function ResultsShowcase() {
                   afterSrc={c.afterSrc}
                   beforeAlt={`Before — ${c.alt}`}
                   afterAlt={`After — ${c.alt}`}
-                  fit="contain"
                   className="aspect-[3/4] border border-border bg-ink"
                 />
                 <figcaption className="mt-5 flex flex-wrap items-center justify-between gap-2">

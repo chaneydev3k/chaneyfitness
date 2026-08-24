@@ -35,7 +35,7 @@ export function About() {
                 Jamaal Chaney
               </p>
               <p className="text-sm text-muted-foreground">
-                Founder · Head Coach
+                Owner · Head Coach
               </p>
             </div>
           </div>
