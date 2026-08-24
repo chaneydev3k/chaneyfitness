@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/shared/reveal";
 import { CalendlyEmbed } from "@/components/shared/calendly";
+import { PricingTabs } from "@/components/shared/pricing-tabs";
 
 const pageUrl = `${siteConfig.url}/personal-trainer-palmetto-fl`;
 const pageTitle = "Personal Trainer in Palmetto, FL | Chaney Fitness";
@@ -229,36 +230,7 @@ export default function PalmettoPage() {
           </Reveal>
 
           <Reveal from="up" delay={0.05}>
-            <div className="rounded-3xl border border-border bg-muted/30 p-7 shadow-soft sm:p-9">
-              <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">
-                Simple, no-contract pricing
-              </p>
-              <div className="mt-5 space-y-4 text-ink">
-                <div className="flex items-baseline justify-between gap-4 border-b border-border pb-4">
-                  <span className="font-semibold">First session</span>
-                  <span className="font-display text-2xl">Free eval</span>
-                </div>
-                <div className="flex items-baseline justify-between gap-4 border-b border-border pb-4">
-                  <span className="font-semibold">Single session</span>
-                  <span className="font-display text-2xl">$65–85</span>
-                </div>
-                <div className="flex items-baseline justify-between gap-4">
-                  <span className="font-semibold">
-                    Packages
-                    <span className="block text-sm font-normal text-muted-foreground">
-                      8–24 sessions · 2–4x / week
-                    </span>
-                  </span>
-                  <span className="text-right font-display text-lg leading-tight text-ink">
-                    12 for $900
-                    <span className="block">24 for $1,750</span>
-                  </span>
-                </div>
-              </div>
-              <Button asChild variant="primary" size="lg" className="mt-7 w-full">
-                <a href="#book">Book your free consult</a>
-              </Button>
-            </div>
+            <PricingTabs />
           </Reveal>
         </div>
       </section>
