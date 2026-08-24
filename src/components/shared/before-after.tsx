@@ -13,6 +13,8 @@ interface BeforeAfterProps {
   className?: string;
   /** Initial divider position 0–100. */
   initial?: number;
+  /** "contain" shows the whole image (full body); "cover" fills + crops. */
+  fit?: "cover" | "contain";
 }
 
 /**
@@ -26,7 +28,9 @@ export function BeforeAfter({
   afterAlt,
   className,
   initial = 50,
+  fit = "cover",
 }: BeforeAfterProps) {
+  const objectFit = fit === "contain" ? "object-contain" : "object-cover";
   const containerRef = React.useRef<HTMLDivElement>(null);
   const [position, setPosition] = React.useState(initial);
   const [dragging, setDragging] = React.useState(false);
@@ -96,7 +100,10 @@ export function BeforeAfter({
         alt={afterAlt}
         draggable={false}
         loading="lazy"
-        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+        className={cn(
+          "pointer-events-none absolute inset-0 h-full w-full",
+          objectFit
+        )}
       />
       <span className="pointer-events-none absolute right-4 top-4 rounded-full bg-ink/80 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur">
         After
@@ -113,7 +120,10 @@ export function BeforeAfter({
           alt={beforeAlt}
           draggable={false}
           loading="lazy"
-          className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+          className={cn(
+          "pointer-events-none absolute inset-0 h-full w-full",
+          objectFit
+        )}
         />
         <span className="pointer-events-none absolute left-4 top-4 rounded-full bg-white/85 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-ink backdrop-blur">
           Before
