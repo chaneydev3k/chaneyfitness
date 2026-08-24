@@ -3,6 +3,7 @@ import { Marquee } from "@/components/layout/marquee";
 import { Why } from "@/components/sections/why";
 import { Programs } from "@/components/sections/programs";
 import { Results } from "@/components/sections/results";
+import { ResultsShowcase } from "@/components/sections/results-showcase";
 import { Transformations } from "@/components/sections/transformations";
 import { Process } from "@/components/sections/process";
 import { Features } from "@/components/sections/features";
@@ -20,6 +21,7 @@ export default function HomePage() {
       <Why />
       <Programs />
       <Results />
+      <ResultsShowcase />
       <Transformations />
       <Process />
       <Features />

@@ -49,22 +49,29 @@ export function Programs() {
                 </p>
 
                 {/* Price */}
-                <div className="mt-5 flex items-end gap-1.5">
+                <div className="mt-5">
                   {program.price ? (
                     <>
-                      <span className="font-display text-4xl leading-none">
-                        {program.price}
-                      </span>
-                      <span
-                        className={cn(
-                          "pb-1 text-sm",
-                          program.highlight
-                            ? "text-white/60"
-                            : "text-muted-foreground"
-                        )}
-                      >
-                        {program.priceNote}
-                      </span>
+                      <div className="flex items-end gap-1.5">
+                        <span className="font-display text-4xl leading-none">
+                          {program.price}
+                        </span>
+                        <span
+                          className={cn(
+                            "pb-1 text-sm",
+                            program.highlight
+                              ? "text-white/60"
+                              : "text-muted-foreground"
+                          )}
+                        >
+                          {program.priceNote}
+                        </span>
+                      </div>
+                      {program.priceExtra && (
+                        <span className="mt-1.5 inline-block text-xs font-semibold text-accent">
+                          {program.priceExtra}
+                        </span>
+                      )}
                     </>
                   ) : (
                     <span

@@ -118,6 +118,8 @@ export interface Program {
   /** Fixed price (e.g. "$550"); omit for consult-based pricing. */
   price?: string;
   priceNote?: string;
+  /** Small line shown beside the price (e.g. discounts). */
+  priceExtra?: string;
   /** Small caveat footnote under the features. */
   note?: string;
   highlight?: boolean;
@@ -146,23 +148,24 @@ export const programs: Program[] = [
   {
     id: "small-group-training",
     name: "Small Group Training",
-    tagline: "3x/week. 40–50 minutes. Built to get you fit.",
+    tagline: "3x/week. 50–60 minutes. Built to get you fit.",
     description:
-      "Build strength, improve conditioning, and get a complete workout in under an hour. Each coach-led session mixes strength, cardio, functional movement, and HIIT — scaled to your level, in a small group of just 2–6.",
+      "Build strength, improve conditioning, and get a complete workout in under an hour. Each coach-led session mixes strength, cardio, functional movement, and HIIT — scaled to your level, in a small group of just 2–4.",
     features: [
       "3 coached workouts every week",
-      "40–50 minute sessions",
+      "50–60 minute sessions",
       "Strength & conditioning",
       "Cardio & HIIT",
       "Functional movement",
       "Fat loss & fitness",
-      "Small groups of 2–6",
+      "Small groups of 2–4",
       "Real-time coaching & form correction",
       "Workouts scaled to your fitness level",
       "Make-up sessions available",
     ],
     price: "$550",
     priceNote: "per month",
+    priceExtra: "Referral discounts available",
     note: "Includes diet planning and goal setting. Schedule is built around member demand.",
     highlight: true,
     badge: "Most popular",
@@ -185,6 +188,38 @@ export const programs: Program[] = [
       "Nutrition & lifestyle guidance",
       "Progress tracking",
     ],
+  },
+];
+
+/* -------------------------------------------------------------------------- */
+/*  Client results (real before/after photos, shared with permission)         */
+/* -------------------------------------------------------------------------- */
+
+export interface ClientResult {
+  id: string;
+  goal: string;
+  result: string;
+  beforeSrc: string;
+  afterSrc: string;
+  alt: string;
+}
+
+export const clientResults: ClientResult[] = [
+  {
+    id: "client1",
+    goal: "Strength & toning",
+    result: "Down 10 lbs · +5 lbs muscle",
+    beforeSrc: "/results/client1-before.jpg",
+    afterSrc: "/results/client1-after.jpg",
+    alt: "Chaney Fitness client strength and toning progress",
+  },
+  {
+    id: "client2",
+    goal: "Fat loss",
+    result: "Down 30 lbs in 2 months",
+    beforeSrc: "/results/client2-before.jpg",
+    afterSrc: "/results/client2-after.jpg",
+    alt: "Chaney Fitness client 30-pound fat-loss transformation",
   },
 ];
 
