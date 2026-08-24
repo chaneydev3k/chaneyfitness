@@ -46,6 +46,10 @@ export const siteConfig = {
     "https://calendly.com/chaneyfitnessfla/15min?hide_gdpr_banner=1&background_color=0b0b0b&text_color=ffffff&primary_color=3b82f6",
   // Google Business Profile reviews (share link).
   reviewsUrl: "https://share.google/60izWuCx8WjJfpBlm",
+  // Small-group application form endpoint. Create a free form at formspree.io
+  // and paste the endpoint here (or swap the form for Calendly). MUST be set
+  // before running ads or submissions go nowhere.
+  applyFormAction: "https://formspree.io/f/REPLACE_WITH_YOUR_ID",
   // Coach identity for the Person/founder schema + About (real EEAT signals).
   coach: {
     name: "Jamaal Chaney",

@@ -59,6 +59,8 @@ export function Navbar() {
   const pathname = usePathname();
   const isHome = pathname === "/";
   const href = (hash: string) => (isHome ? hash : `/${hash}`);
+  // Focused conversion landing pages get a stripped nav (logo + one CTA).
+  const isLanding = pathname.startsWith("/small-group");
 
   return (
     <header
@@ -77,7 +79,7 @@ export function Navbar() {
           <Logo tone={onHero ? "white" : "ink"} />
         </a>
 
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className={cn("hidden items-center gap-1 lg:flex", isLanding && "lg:hidden")}>
           {navLinks.map((link) => {
             const isActive = active === link.href.replace("#", "");
             return (
@@ -113,37 +115,47 @@ export function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href={siteConfig.phoneHref}
-            className={cn(
-              "text-sm font-semibold transition-colors",
-              onHero ? "text-white/70 hover:text-white" : "text-muted-foreground hover:text-ink"
-            )}
-          >
-            {siteConfig.phone}
-          </a>
+          {!isLanding && (
+            <a
+              href={siteConfig.phoneHref}
+              className={cn(
+                "text-sm font-semibold transition-colors",
+                onHero ? "text-white/70 hover:text-white" : "text-muted-foreground hover:text-ink"
+              )}
+            >
+              {siteConfig.phone}
+            </a>
+          )}
           <Button asChild variant="accent" size="md">
-            <a href={href("#contact")}>Book Consultation</a>
+            <a href={isLanding ? "#apply" : href("#contact")}>
+              {isLanding ? "Apply now" : "Book Consultation"}
+            </a>
           </Button>
         </div>
 
-        {/* Mobile trigger */}
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className={cn(
-            "grid size-10 place-items-center rounded-full transition-colors lg:hidden",
-            onHero ? "text-white hover:bg-white/10" : "text-ink hover:bg-muted"
-          )}
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-        >
-          {open ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
+        {/* Mobile: Apply CTA on the landing page, hamburger elsewhere */}
+        {isLanding ? (
+          <Button asChild variant="accent" size="sm" className="lg:hidden">
+            <a href="#apply">Apply now</a>
+          </Button>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className={cn(
+              "grid size-10 place-items-center rounded-full transition-colors lg:hidden",
+              onHero ? "text-white hover:bg-white/10" : "text-ink hover:bg-muted"
+            )}
+            aria-label={open ? "Close menu" : "Open menu"}
+            aria-expanded={open}
+          >
+            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        )}
       </nav>
 
       <AnimatePresence>
-        {open && (
+        {open && !isLanding && (
           <motion.div
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
