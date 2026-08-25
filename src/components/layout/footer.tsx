@@ -140,13 +140,16 @@ export function Footer() {
           <p>
             © {year} {siteConfig.name}. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="transition-colors hover:text-ink">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <Link href="/privacy-policy" className="transition-colors hover:text-ink">
               Privacy Policy
-            </a>
-            <a href="#" className="transition-colors hover:text-ink">
-              Terms
-            </a>
+            </Link>
+            <Link href="/terms-and-conditions" className="transition-colors hover:text-ink">
+              Terms &amp; Conditions
+            </Link>
+            <Link href="/sms-terms" className="transition-colors hover:text-ink">
+              SMS Terms
+            </Link>
           </div>
         </div>
       </div>

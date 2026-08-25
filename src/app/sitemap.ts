@@ -11,6 +11,9 @@ const routes: { path: string; priority: number }[] = [
   { path: "personal-trainer-st-petersburg-fl", priority: 0.9 },
   { path: "personal-trainer-palmetto-fl", priority: 0.8 },
   { path: "personal-trainer-bradenton-fl", priority: 0.8 },
+  { path: "privacy-policy", priority: 0.3 },
+  { path: "terms-and-conditions", priority: 0.3 },
+  { path: "sms-terms", priority: 0.3 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
