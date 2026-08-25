@@ -46,10 +46,6 @@ export const siteConfig = {
     "https://calendly.com/chaneyfitnessfla/15min?hide_gdpr_banner=1&background_color=0b0b0b&text_color=ffffff&primary_color=3b82f6",
   // Google Business Profile reviews (share link).
   reviewsUrl: "https://share.google/60izWuCx8WjJfpBlm",
-  // Small-group application form endpoint. Create a free form at formspree.io
-  // and paste the endpoint here (or swap the form for Calendly). MUST be set
-  // before running ads or submissions go nowhere.
-  applyFormAction: "https://formspree.io/f/REPLACE_WITH_YOUR_ID",
   // Coach identity for the Person/founder schema + About (real EEAT signals).
   coach: {
     name: "Jamaal Chaney",
@@ -154,7 +150,7 @@ export const programs: Program[] = [
     name: "Small Group Training",
     tagline: "3x/week. 50–60 minutes. Built to get you fit.",
     description:
-      "Build strength, improve conditioning, and get a complete workout in under an hour. Each coach-led session mixes strength, cardio, functional movement, and HIIT — scaled to your level, in a small group of just 2–4.",
+      "Build strength, improve conditioning, and get a complete workout in under an hour. Each coach-led session mixes strength, cardio, functional movement, and HIIT — scaled to your level, in a semi-private group of just 2.",
     features: [
       "3 coached workouts every week",
       "50–60 minute sessions",
@@ -162,12 +158,12 @@ export const programs: Program[] = [
       "Cardio & HIIT",
       "Functional movement",
       "Fat loss & fitness",
-      "Small groups of 2–4",
+      "Semi-private groups of 2",
       "Real-time coaching & form correction",
       "Workouts scaled to your fitness level",
       "Make-up sessions available",
     ],
-    price: "$550",
+    price: "$500",
     priceNote: "per month",
     priceExtra: "Referral discounts available",
     note: "Includes diet planning and goal setting. Schedule is built around member demand.",

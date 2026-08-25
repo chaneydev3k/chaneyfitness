@@ -11,29 +11,30 @@ import { siteConfig, testimonials } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/shared/reveal";
 import { GoogleG } from "@/components/shared/google-reviews";
+import { CalendlyEmbed } from "@/components/shared/calendly";
 import { ResultsShowcase } from "@/components/sections/results-showcase";
 
 const pageUrl = `${siteConfig.url}/small-group`;
 const pageTitle =
-  "Small-Group Personal Training in Downtown St. Pete | Chaney Fitness";
+  "Small-Group Personal Training in Palmetto, FL | Chaney Fitness";
 
 export const metadata: Metadata = {
   title: { absolute: pageTitle },
   description:
-    "Coached small-group training in Downtown St. Petersburg — get stronger and leaner with real coaching and accountability, without the price of private 1:1. 4 spots, $500/month. Apply for a spot.",
+    "Coached small-group training in Palmetto, FL (serving Bradenton) — get stronger and leaner with real coaching and accountability, without the price of private 1:1. 4 spots, $500/month. Book a free consult.",
   alternates: { canonical: "/small-group" },
   openGraph: {
     type: "website",
     url: pageUrl,
     title: pageTitle,
     description:
-      "4 spots. Coached 3x/week small-group training in Downtown St. Pete. Get stronger and leaner without paying for private 1:1.",
+      "4 spots. Coached 3x/week small-group training in Palmetto & Bradenton. Get stronger and leaner without paying for private 1:1.",
   },
 };
 
 const offerChips = [
   "3 coached workouts / week",
-  "45–60 min sessions",
+  "50–60 min sessions",
   "Only 4 spots",
   "$500 / month",
 ];
@@ -56,8 +57,8 @@ const benefits = [
     body: "Three set sessions a week and a coach who notices when you're not there.",
   },
   {
-    title: "Train with motivated people",
-    body: "A small, supportive group that pushes you — without the crowded-gym chaos.",
+    title: "Semi-private, just 2 of you",
+    body: "You and one other motivated person — real accountability without the crowded-gym chaos.",
   },
   {
     title: "1:1 attention, not the 1:1 price",
@@ -85,7 +86,7 @@ const value = [
   {
     label: "Small-Group Training",
     price: "$500 / mo",
-    note: "Real coaching, a real plan, and accountability — about $42 a session.",
+    note: "Real coaching, a real plan, and accountability — about $40 a session.",
     highlight: true,
   },
   {
@@ -99,7 +100,7 @@ const value = [
 const faqs = [
   {
     q: "How big is the group?",
-    a: "Small — 2–6 people — and this first group has just 4 spots. You'll never be a face in a crowd.",
+    a: "Tiny — just 2 people per group (semi-private), with 4 spots in this launch. You'll never be a face in a crowd.",
   },
   {
     q: "I'm a total beginner. Is this for me?",
@@ -115,11 +116,11 @@ const faqs = [
   },
   {
     q: "Where and when do we train?",
-    a: "A private gym in Downtown St. Pete, 3x a week. Exact days and times are set around the group once it's formed.",
+    a: "A private studio in Palmetto (quick from Bradenton), 3x a week. Exact days and times are set around the group once it's formed.",
   },
   {
-    q: "What happens after I apply?",
-    a: "I reach out personally, we talk through your goals on a quick call, and if it's a fit you're in. No pressure, no hard sell.",
+    q: "What happens after I book?",
+    a: "We hop on a quick call to talk through your goals, and if it's a fit you're in. No pressure, no hard sell.",
   },
 ];
 
@@ -147,7 +148,7 @@ export default function SmallGroupPage() {
 
         <div className="container-tight">
           <span className="eyebrow">
-            <MapPin className="size-3.5" /> Small-Group Training · Downtown St. Pete
+            <MapPin className="size-3.5" /> Small-Group Training · Palmetto, FL
           </span>
 
           <h1 className="headline mt-5 max-w-4xl text-[clamp(2.6rem,8vw,5.5rem)] text-white">
@@ -156,7 +157,7 @@ export default function SmallGroupPage() {
 
           <p className="mt-6 max-w-prose text-pretty text-lg leading-relaxed text-white/75">
             I&apos;m opening <strong className="text-white">4 spots</strong> for a
-            small group of adults in Downtown St. Pete who want structured
+            small group of adults in Palmetto & Bradenton who want structured
             workouts, real coaching, and accountability — without paying for
             private 1:1 personal training.
           </p>
@@ -339,7 +340,7 @@ export default function SmallGroupPage() {
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-muted-foreground">
               I&apos;m Jamaal Chaney — ISSA-certified trainer and owner of Chaney
-              Fitness. I coach busy adults across St. Pete to get stronger and
+              Fitness. I coach busy adults across Palmetto and Manatee County to get stronger and
               leaner with programming that fits real life. In this group you get
               my eyes on every session: real-time form coaching, exercises
               scaled to you, nutrition guidance, and a plan that actually
@@ -351,7 +352,7 @@ export default function SmallGroupPage() {
                 Personal Trainer
               </span>
               <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white px-4 py-2 text-sm font-medium text-ink shadow-soft">
-                <MapPin className="size-4 text-accent" /> Downtown St. Pete
+                <MapPin className="size-4 text-accent" /> Palmetto, FL
               </span>
             </div>
           </div>
@@ -409,8 +410,8 @@ export default function SmallGroupPage() {
               Claim one of the 4 spots.
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-white/70">
-              Fill this out and I&apos;ll reach out personally — usually the same
-              day. We&apos;ll talk through your goals on a quick call and, if
+              Grab a time below for a quick, no-pressure consult. We&apos;ll talk
+              through your goals, whether you can train 2–3x a week, and if
               it&apos;s a fit, get you started.
             </p>
             <blockquote className="mt-8 border-l-2 border-accent pl-5 text-white/80">
@@ -421,112 +422,16 @@ export default function SmallGroupPage() {
             </blockquote>
           </div>
 
-          <form
-            action={siteConfig.applyFormAction}
-            method="POST"
-            className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 shadow-lift backdrop-blur sm:p-9"
-          >
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Small-Group application — Chaney Fitness"
+          <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-2 shadow-lift backdrop-blur sm:p-3">
+            <CalendlyEmbed
+              url={siteConfig.calendlyEmbedUrl}
+              height={720}
+              className="overflow-hidden rounded-2xl"
             />
-            <input type="hidden" name="_next" value={`${siteConfig.url}/small-group/thank-you`} />
-
-            <div className="grid gap-4">
-              <label className="block text-sm">
-                <span className="mb-1.5 block font-medium text-white/80">Name</span>
-                <input
-                  name="name"
-                  required
-                  autoComplete="name"
-                  placeholder="Your name"
-                  className="w-full rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 text-white placeholder:text-white/40 outline-none focus:border-accent"
-                />
-              </label>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <label className="block text-sm">
-                  <span className="mb-1.5 block font-medium text-white/80">Email</span>
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    autoComplete="email"
-                    placeholder="you@email.com"
-                    className="w-full rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 text-white placeholder:text-white/40 outline-none focus:border-accent"
-                  />
-                </label>
-                <label className="block text-sm">
-                  <span className="mb-1.5 block font-medium text-white/80">Phone</span>
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    autoComplete="tel"
-                    placeholder="(727) 000-0000"
-                    className="w-full rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 text-white placeholder:text-white/40 outline-none focus:border-accent"
-                  />
-                </label>
-              </div>
-              <label className="block text-sm">
-                <span className="mb-1.5 block font-medium text-white/80">
-                  Your main goal
-                </span>
-                <select
-                  name="goal"
-                  required
-                  defaultValue=""
-                  className="w-full rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 text-white outline-none focus:border-accent"
-                >
-                  <option value="" disabled className="bg-ink">
-                    Choose one…
-                  </option>
-                  <option className="bg-ink">Lose fat</option>
-                  <option className="bg-ink">Build strength &amp; tone</option>
-                  <option className="bg-ink">Both</option>
-                  <option className="bg-ink">Get consistent</option>
-                </select>
-              </label>
-              <label className="block text-sm">
-                <span className="mb-1.5 block font-medium text-white/80">
-                  Can you train 3x per week?
-                </span>
-                <select
-                  name="commitment"
-                  required
-                  defaultValue=""
-                  className="w-full rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 text-white outline-none focus:border-accent"
-                >
-                  <option value="" disabled className="bg-ink">
-                    Choose one…
-                  </option>
-                  <option className="bg-ink">Yes</option>
-                  <option className="bg-ink">I think so</option>
-                  <option className="bg-ink">Not sure yet</option>
-                </select>
-              </label>
-              <label className="block text-sm">
-                <span className="mb-1.5 block font-medium text-white/80">
-                  Anything I should know?{" "}
-                  <span className="text-white/40">(optional)</span>
-                </span>
-                <textarea
-                  name="notes"
-                  rows={3}
-                  placeholder="Injuries, schedule, what you've tried before…"
-                  className="w-full resize-none rounded-xl border border-white/15 bg-white/[0.04] px-4 py-3 text-white placeholder:text-white/40 outline-none focus:border-accent"
-                />
-              </label>
-
-              <Button type="submit" variant="accent" size="xl" className="mt-1 w-full">
-                Apply for a spot
-                <ArrowRight className="size-4" />
-              </Button>
-              <p className="text-center text-xs text-white/45">
-                No payment now. Applying just starts the conversation.
-              </p>
-            </div>
-          </form>
+            <p className="px-4 py-3 text-center text-xs text-white/45">
+              No payment now. Booking just starts the conversation.
+            </p>
+          </div>
         </div>
       </section>
     </>

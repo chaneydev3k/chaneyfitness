@@ -29,7 +29,7 @@ export default function ThankYouPage() {
           You&apos;re in the queue.
         </h1>
         <p className="mt-5 text-pretty text-lg leading-relaxed text-white/70">
-          Thanks for applying for a spot in the St. Pete small group. I&apos;ll
+          Thanks for booking a spot in the Palmetto small group. I&apos;ll
           reach out personally — usually the same day — to talk through your
           goals and see if it&apos;s a fit. Keep an eye on your phone.
         </p>

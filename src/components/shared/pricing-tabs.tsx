@@ -74,7 +74,7 @@ export function PricingTabs() {
           <span className="font-semibold">Small Group</span>
           <span className="text-right">
             <span className="font-display text-2xl">
-              $550
+              $500
               <span className="text-sm font-normal text-muted-foreground">
                 {" "}
                 /mo
@@ -88,7 +88,7 @@ export function PricingTabs() {
         <ul className="mt-4 space-y-2 text-sm text-ink/80">
           <li>3 coached sessions every week</li>
           <li>50–60 minute sessions</li>
-          <li>Small groups of 2–4</li>
+          <li>Semi-private groups of 2</li>
           <li>Strength, conditioning &amp; HIIT — scaled to your level</li>
         </ul>
       </div>
