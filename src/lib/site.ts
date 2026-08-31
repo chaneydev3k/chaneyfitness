@@ -148,11 +148,11 @@ export const programs: Program[] = [
   {
     id: "small-group-training",
     name: "Small Group Training",
-    tagline: "3x/week. 50–60 minutes. Built to get you fit.",
+    tagline: "2x/week. 50–60 minutes. Built to get you fit.",
     description:
       "Build strength, improve conditioning, and get a complete workout in under an hour. Each coach-led session mixes strength, cardio, functional movement, and HIIT — scaled to your level, in a semi-private group of just 2.",
     features: [
-      "3 coached workouts every week",
+      "2 coached workouts every week",
       "50–60 minute sessions",
       "Strength & conditioning",
       "Cardio & HIIT",
@@ -163,7 +163,7 @@ export const programs: Program[] = [
       "Workouts scaled to your fitness level",
       "Make-up sessions available",
     ],
-    price: "$500",
+    price: "$600",
     priceNote: "per month",
     priceExtra: "Referral discounts available",
     note: "Includes diet planning and goal setting. Schedule is built around member demand.",
@@ -375,7 +375,7 @@ export const faqs: { question: string; answer: string }[] = [
   {
     question: "How often do we meet?",
     answer:
-      "It depends on the program. Online Coaching runs on your schedule with weekly check-ins and messaging; Small Group Training is three coached sessions a week; in-person Personal Training is scheduled around your calendar, typically two to three sessions per week.",
+      "It depends on the program. Online Coaching runs on your schedule with weekly check-ins and messaging; Small Group Training is two coached sessions a week; in-person Personal Training is scheduled around your calendar, typically two to three sessions per week.",
   },
   {
     question: "Do you provide nutrition guidance?",

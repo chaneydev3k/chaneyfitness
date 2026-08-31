@@ -21,22 +21,22 @@ const pageTitle =
 export const metadata: Metadata = {
   title: { absolute: pageTitle },
   description:
-    "Coached small-group training in Palmetto, FL (serving Bradenton) — get stronger and leaner with real coaching and accountability, without the price of private 1:1. 4 spots, $500/month. Book a free consult.",
+    "Coached small-group training in Palmetto, FL (serving Bradenton) — get stronger and leaner with real coaching and accountability, without the price of private 1:1. 4 spots, $600/month. Book a free consult.",
   alternates: { canonical: "/small-group" },
   openGraph: {
     type: "website",
     url: pageUrl,
     title: pageTitle,
     description:
-      "4 spots. Coached 3x/week small-group training in Palmetto & Bradenton. Get stronger and leaner without paying for private 1:1.",
+      "4 spots. Coached 2x/week small-group training in Palmetto & Bradenton. Get stronger and leaner without paying for private 1:1.",
   },
 };
 
 const offerChips = [
-  "3 coached workouts / week",
+  "2 coached workouts / week",
   "50–60 min sessions",
   "Only 4 spots",
-  "$500 / month",
+  "$600 / month",
 ];
 
 const benefits = [
@@ -54,7 +54,7 @@ const benefits = [
   },
   {
     title: "Real accountability",
-    body: "Three set sessions a week and a coach who notices when you're not there.",
+    body: "Two set sessions a week and a coach who notices when you're not there.",
   },
   {
     title: "Semi-private, just 2 of you",
@@ -62,7 +62,7 @@ const benefits = [
   },
   {
     title: "1:1 attention, not the 1:1 price",
-    body: "Personalized coaching for a fraction of what private training costs.",
+    body: "Personalized coaching for less per month than private 1:1 training.",
   },
 ];
 
@@ -72,7 +72,7 @@ const whoFor = [
   "You're not sure what to actually do in the gym",
   "You want coaching but don't need full private 1:1",
   "You're done with crowded commercial gyms",
-  "You want a simple, structured 3-day-a-week routine",
+  "You want a simple, structured 2-day-a-week routine",
   "You want accountability that keeps you showing up",
 ];
 
@@ -85,8 +85,8 @@ const value = [
   },
   {
     label: "Small-Group Training",
-    price: "$500 / mo",
-    note: "Real coaching, a real plan, and accountability — about $40 a session.",
+    price: "$600 / mo",
+    note: "Real coaching, a real plan, and accountability — for less per month than private 1:1.",
     highlight: true,
   },
   {
@@ -111,12 +111,12 @@ const faqs = [
     a: "Make-up sessions are available. Life happens; your progress shouldn't stall for it.",
   },
   {
-    q: "Why $500 a month?",
-    a: "Because it's real coaching and a real program — not a class. It's roughly half the cost of private training for the same results-driving system, plus nutrition guidance and accountability.",
+    q: "Why $600 a month?",
+    a: "Because it's real coaching and a real program — not a class. You get the same results-driving system as private training for less per month, plus nutrition guidance and accountability.",
   },
   {
     q: "Where and when do we train?",
-    a: "A private studio in Palmetto (quick from Bradenton), 3x a week. Exact days and times are set around the group once it's formed.",
+    a: "A private studio in Palmetto (quick from Bradenton), 2x a week. Exact days and times are set around the group once it's formed.",
   },
   {
     q: "What happens after I book?",
@@ -267,17 +267,17 @@ export default function SmallGroupPage() {
       {/* Real results (reuses the before/after showcase) */}
       <ResultsShowcase />
 
-      {/* Value / why $500 */}
+      {/* Value / why $600 */}
       <section className="bg-ink py-24 text-white sm:py-28">
         <div className="container-tight">
           <span className="eyebrow">The math</span>
           <h2 className="headline mt-4 max-w-3xl text-[2.1rem] text-white sm:text-5xl">
-            Why $500 a month is the smart middle.
+            Why $600 a month is the smart middle.
           </h2>
           <p className="mt-5 max-w-prose text-pretty text-lg leading-relaxed text-white/70">
-            The same coaching that drives private-training results, at close to
-            half the cost — and a world apart from guessing your way through a
-            commercial gym.
+            The same coaching that drives private-training results, for less per
+            month than private 1:1 — and a world apart from guessing your way
+            through a commercial gym.
           </p>
           <div className="mt-12 grid gap-5 lg:grid-cols-3">
             {value.map((v) => (
@@ -411,7 +411,7 @@ export default function SmallGroupPage() {
             </h2>
             <p className="mt-5 text-pretty text-lg leading-relaxed text-white/70">
               Grab a time below for a quick, no-pressure consult. We&apos;ll talk
-              through your goals, whether you can train 2–3x a week, and if
+              through your goals, whether you can train 2x a week, and if
               it&apos;s a fit, get you started.
             </p>
             <blockquote className="mt-8 border-l-2 border-accent pl-5 text-white/80">
